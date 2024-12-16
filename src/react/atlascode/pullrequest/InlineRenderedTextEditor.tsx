@@ -52,7 +52,7 @@ const InlineRenderedTextEditor: React.FC<InlineTextEditorProps> = (props: Inline
             await props.onSave?.(value);
             exitEditMode();
         },
-        [exitEditMode, props.onSave],
+        [exitEditMode, props.onSave], // eslint-disable-line react-hooks/exhaustive-deps
     );
 
     return editMode ? (

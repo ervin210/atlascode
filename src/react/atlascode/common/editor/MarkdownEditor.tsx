@@ -177,7 +177,7 @@ export const MarkdownEditor: React.FC<PropsType> = (props: PropsType) => {
             setContent('');
         }
         props.onCancel?.();
-    }, [enableRichTextEditor, props.onCancel]);
+    }, [enableRichTextEditor, props.onCancel]); // eslint-disable-line react-hooks/exhaustive-deps
 
     const handleSave = useCallback(async () => {
         const mdContent: string = enableRichTextEditor ? mdSerializer.serialize(view.current!.state.doc) : content;

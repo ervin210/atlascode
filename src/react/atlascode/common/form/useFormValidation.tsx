@@ -228,7 +228,7 @@ export function useFormValidation<FieldTypes>(watch?: Partial<FieldTypes>): Form
     }
 
     return {
-        register: useCallback(register, []),
+        register: useCallback(register, []), // eslint-disable-line react-hooks/exhaustive-deps
         watches: watches.current,
         errors: errors.current,
         handleSubmit,

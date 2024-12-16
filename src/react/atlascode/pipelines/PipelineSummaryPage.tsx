@@ -484,7 +484,7 @@ const PipelineSummaryPage: React.FunctionComponent = () => {
                 </div>
             );
         },
-        [classes.loglessStepHeader, classes.stepHeader, controller.fetchLogs, stepHeader],
+        [classes.loglessStepHeader, classes.stepHeader, controller.fetchLogs, stepHeader], // eslint-disable-line react-hooks/exhaustive-deps
     );
 
     const renderPipelineStep = useCallback(

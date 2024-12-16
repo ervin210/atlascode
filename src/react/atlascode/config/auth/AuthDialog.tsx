@@ -203,8 +203,8 @@ export const AuthDialog: React.FunctionComponent<AuthDialogProps> = memo(
             [],
         );
 
-        const registerUrl = useCallback(register(validateStartsWithProtocol), []);
-        const registerRequiredString = useCallback(register(validateRequiredString), []);
+        const registerUrl = useCallback(register(validateStartsWithProtocol), []); // eslint-disable-line react-hooks/exhaustive-deps
+        const registerRequiredString = useCallback(register(validateRequiredString), []); // eslint-disable-line react-hooks/exhaustive-deps
         return (
             <Dialog fullWidth maxWidth="md" open={open} onExited={onExited}>
                 <DialogTitle>
