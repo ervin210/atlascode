@@ -467,7 +467,7 @@ export class CreateIssueWebview
                                 });
                             }
 
-                            if (attachments) {
+                            if (attachments && attachments.length > 0) {
                                 let formData = new FormData();
                                 attachments.forEach((file: any) => {
                                     formData.append('file', fs.createReadStream(file.path), {
@@ -489,7 +489,7 @@ export class CreateIssueWebview
                             commands.executeCommand(Commands.RefreshJiraExplorer);
                             this.fireCallback(resp.key, payload.summary);
                         } catch (e) {
-                            Logger.error(new Error(`error creating comment: ${e}`));
+                            Logger.error(new Error(`error creating issue: ${e}`)); // bwieger
                             this.postMessage({
                                 type: 'error',
                                 reason: this.formatErrorReason(e, 'Error creating issue'),

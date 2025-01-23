@@ -173,7 +173,7 @@ export default class CreateIssuePage extends AbstractIssueEditorPage<Emit, Accep
             isCreateBannerOpen: false,
         });
         this.postMessage({
-            action: 'createIssue',
+            action: 'createIssue', // bwieger
             site: this.state.siteDetails,
             issueData: this.state.fieldValues,
         });
