@@ -1,4 +1,4 @@
-import { commands, Disposable, Event, EventEmitter, TreeItem, Uri, window, workspace } from 'vscode';
+import { commands, Disposable, Event, EventEmitter, TreeItem, Uri, window, workspace, l10n } from 'vscode';
 import { prPaginationEvent, viewScreenEvent } from '../analytics';
 import { ProductBitbucket } from '../atlclients/authInfo';
 import { BitbucketContext } from '../bitbucket/bbContext';
@@ -69,29 +69,34 @@ export class PullRequestNodeDataProvider extends BaseTreeDataProvider {
                 this.refresh();
             }),
             commands.registerCommand(Commands.BitbucketPullRequestFilters, () => {
+                const choice1 = l10n.t('Show all open pull requests');
+                const choice2 = l10n.t('Show pull requests created by me');
+                const choice3 = l10n.t('Show pull requests to be reviewed');
+                const choice4 = l10n.t('Show merged pull requests');
+                const choice5 = l10n.t('Show declined pull requests');
                 window
                     .showQuickPick([
-                        'Show all open pull requests',
-                        'Show pull requests created by me',
-                        'Show pull requests to be reviewed',
-                        'Show merged pull requests',
-                        'Show declined pull requests',
+                        choice1,
+                        choice2,
+                        choice3,
+                        choice4,
+                        choice5,
                     ])
                     .then((selected: string) => {
                         switch (selected) {
-                            case 'Show all open pull requests':
+                            case choice1:
                                 commands.executeCommand(Commands.BitbucketShowOpenPullRequests);
                                 break;
-                            case 'Show pull requests created by me':
+                            case choice2:
                                 commands.executeCommand(Commands.BitbucketShowPullRequestsCreatedByMe);
                                 break;
-                            case 'Show pull requests to be reviewed':
+                            case choice3:
                                 commands.executeCommand(Commands.BitbucketShowPullRequestsToReview);
                                 break;
-                            case 'Show merged pull requests':
+                            case choice4:
                                 commands.executeCommand(Commands.BitbucketShowMergedPullRequests);
                                 break;
-                            case 'Show declined pull requests':
+                            case choice5:
                                 commands.executeCommand(Commands.BitbucketShowDeclinedPullRequests);
                                 break;
                             default:
@@ -226,9 +231,9 @@ export class PullRequestNodeDataProvider extends BaseTreeDataProvider {
                 Container.analyticsClient.sendScreenEvent(event),
             );
             return [
-                new SimpleNode('Authenticate with Bitbucket to view pull requests', {
+                new SimpleNode(l10n.t('Authenticate with Bitbucket to view pull requests'), {
                     command: Commands.ShowBitbucketAuth,
-                    title: 'Open Bitbucket Settings',
+                    title: l10n.t('Open Bitbucket Settings'),
                 }),
             ];
         }

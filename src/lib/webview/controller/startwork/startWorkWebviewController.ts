@@ -21,6 +21,8 @@ import { formatError } from '../../formatError';
 import { CommonActionMessageHandler } from '../common/commonActionMessageHandler';
 import { MessagePoster, WebviewController } from '../webviewController';
 import { StartWorkActionApi } from './startWorkActionApi';
+import * as vscode from 'vscode';
+
 export const id: string = 'atlascodeSettingsV2';
 const customBranchType: BranchType = { kind: 'Custom', prefix: '' };
 
@@ -40,7 +42,7 @@ export class StartWorkWebviewController implements WebviewController<StartWorkIs
     }
 
     public title(): string {
-        return `Start work on ${this.initData.issue.key}`;
+        return vscode.l10n.t('Start work on {0}', this.initData.issue.key);
     }
 
     public screenDetails() {

@@ -30,8 +30,9 @@ import { formatError } from '../../formatError';
 import { CommonActionMessageHandler } from '../common/commonActionMessageHandler';
 import { MessagePoster, WebviewController } from '../webviewController';
 import { PullRequestDetailsActionApi } from './pullRequestDetailsActionApi';
+import * as vscode from 'vscode';
 
-export const title: string = 'Pull Request'; //TODO: Needs the pull request ID as well...
+export const title: string = vscode.l10n.t('Pull Request'); //TODO: Needs the pull request ID as well...
 
 export class PullRequestDetailsWebviewController implements WebviewController<PullRequest> {
     private pr: PullRequest;
@@ -71,7 +72,7 @@ export class PullRequestDetailsWebviewController implements WebviewController<Pu
     }
 
     public title(): string {
-        return `Pull Request ${this.pr.data.id}`;
+        return vscode.l10n.t('Pull Request {0}', this.pr.data.id);
     }
 
     public screenDetails() {

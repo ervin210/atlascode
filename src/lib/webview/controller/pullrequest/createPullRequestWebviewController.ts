@@ -18,6 +18,7 @@ import { formatError } from '../../formatError';
 import { CommonActionMessageHandler } from '../common/commonActionMessageHandler';
 import { MessagePoster, WebviewController } from '../webviewController';
 import { CreatePullRequestActionApi } from './createPullRequestActionApi';
+import * as vscode from 'vscode';
 
 export class CreatePullRequestWebviewController implements WebviewController<WorkspaceRepo> {
     private isRefreshing = false;
@@ -35,7 +36,7 @@ export class CreatePullRequestWebviewController implements WebviewController<Wor
     }
 
     public title(): string {
-        return 'Create pull request';
+        return vscode.l10n.t('Create pull request');
     }
 
     public screenDetails() {
