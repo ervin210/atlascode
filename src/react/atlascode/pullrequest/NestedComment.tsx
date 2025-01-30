@@ -111,27 +111,27 @@ export const NestedComment: React.FunctionComponent<NestedCommentProps> = ({
                                 <Grid container direction={'row'}>
                                     <Grid item>
                                         <Button color={'primary'} onClick={handleReplyPressed}>
-                                            {l10n.t("Reply")}
+                                            {l10n.t('Reply')}
                                         </Button>
                                     </Grid>
                                     <Grid item>
                                         <Box hidden={!comment.editable}>
                                             <Button color={'primary'} onClick={handleEditPressed}>
-                                                {l10n.t("Edit")}
+                                                {l10n.t('Edit')}
                                             </Button>
                                         </Box>
                                     </Grid>
                                     <Grid item>
                                         <Box hidden={comment.deleted || !comment.deletable}>
                                             <Button color={'primary'} onClick={handleDelete}>
-                                                {l10n.t("Delete")}
+                                                {l10n.t('Delete')}
                                             </Button>
                                         </Box>
                                     </Grid>
                                     <Grid item>
                                         <Box marginLeft={2}>
                                             <Button color={'primary'} onClick={handleCreateTaskPressed}>
-                                                {l10n.t("Create Task")}
+                                                {l10n.t('Create Task')}
                                             </Button>
                                         </Box>
                                     </Grid>

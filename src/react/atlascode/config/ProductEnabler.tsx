@@ -23,7 +23,7 @@ export const ProductEnabler: React.FunctionComponent<ProductEnablerProps> = ({ l
     return (
         <Grid container justify="center" alignItems="center" spacing={1}>
             <Grid item>
-                <Tooltip title={enabled ? l10n.t("Disable {0} features", label) : l10n.t("Enable {0} features", label)}>
+                <Tooltip title={enabled ? l10n.t('Disable {0} features', label) : l10n.t('Enable {0} features', label)}>
                     <Switch
                         color="primary"
                         size="small"

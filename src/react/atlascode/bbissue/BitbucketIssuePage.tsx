@@ -137,18 +137,18 @@ const BitbucketIssuePage: React.FunctionComponent = () => {
                             </Typography>
                             <Box className={classes.grow} />
                             <CopyLinkButton
-                                tooltip={l10n.t("Copy link to issue")}
+                                tooltip={l10n.t('Copy link to issue')}
                                 url={state.issue.data.links?.html?.href}
                                 onClick={controller.copyLink}
                             />
                             <Box marginRight={1} hidden={!state.showJiraButton}>
-                                <Tooltip title={l10n.t("Create Jira issue")}>
+                                <Tooltip title={l10n.t('Create Jira issue')}>
                                     <IconButton aria-label="create Jira issue" onClick={controller.createJiraIssue}>
                                         <JiraIcon />
                                     </IconButton>
                                 </Tooltip>
                             </Box>
-                            <Tooltip title={l10n.t("Create a branch and assign issue to me")}>
+                            <Tooltip title={l10n.t('Create a branch and assign issue to me')}>
                                 <Button
                                     variant="contained"
                                     color="primary"
@@ -173,7 +173,7 @@ const BitbucketIssuePage: React.FunctionComponent = () => {
                                         </Grid>
                                         <Grid item zeroMinWidth>
                                             <Typography variant="h4">
-                                                <Box fontWeight="fontWeightBold">{l10n.t("Summary")}</Box>
+                                                <Box fontWeight="fontWeightBold">{l10n.t('Summary')}</Box>
                                             </Typography>
                                         </Grid>
                                         <Grid item xs zeroMinWidth>
@@ -187,7 +187,7 @@ const BitbucketIssuePage: React.FunctionComponent = () => {
                                         </Grid>
                                         <Grid item zeroMinWidth>
                                             <Typography variant="h4">
-                                                <Box fontWeight="fontWeightBold">{l10n.t("Comments")}</Box>
+                                                <Box fontWeight="fontWeightBold">{l10n.t('Comments')}</Box>
                                             </Typography>
                                         </Grid>
                                         <Grid item xs zeroMinWidth>
@@ -241,7 +241,7 @@ const BitbucketIssuePage: React.FunctionComponent = () => {
                                         <Grid item>
                                             <Grid container spacing={1} direction="row" alignItems="center">
                                                 <Grid item>
-                                                    <Tooltip title={l10n.t("Watches")}>
+                                                    <Tooltip title={l10n.t('Watches')}>
                                                         <Button
                                                             variant="contained"
                                                             startIcon={<RemoveRedEyeOutlinedIcon />}
@@ -251,7 +251,7 @@ const BitbucketIssuePage: React.FunctionComponent = () => {
                                                     </Tooltip>
                                                 </Grid>
                                                 <Grid item>
-                                                    <Tooltip title={l10n.t("Votes")}>
+                                                    <Tooltip title={l10n.t('Votes')}>
                                                         <Button variant="contained" startIcon={<StarBorder />}>
                                                             {state.issue.data.votes || 0}
                                                         </Button>
@@ -261,14 +261,14 @@ const BitbucketIssuePage: React.FunctionComponent = () => {
                                         </Grid>
                                         <Grid item>
                                             <Typography variant="h6">
-                                                <strong>{l10n.t("Status")}</strong>
+                                                <strong>{l10n.t('Status')}</strong>
                                             </Typography>
                                             <StatusMenu status={state.issue.data.state} onChange={handleStatusChange} />
                                         </Grid>
                                         <Grid item>
                                             <Grid item>
                                                 <Typography variant="h6">
-                                                    <strong>{l10n.t("Kind")}</strong>
+                                                    <strong>{l10n.t('Kind')}</strong>
                                                 </Typography>
                                             </Grid>
                                             <Grid container spacing={1} direction="row">
@@ -281,7 +281,7 @@ const BitbucketIssuePage: React.FunctionComponent = () => {
                                         <Grid item>
                                             <Grid item>
                                                 <Typography variant="h6">
-                                                    <strong>{l10n.t("Priority")}</strong>
+                                                    <strong>{l10n.t('Priority')}</strong>
                                                 </Typography>
                                             </Grid>
                                             <Grid container spacing={1} direction="row">
@@ -294,7 +294,7 @@ const BitbucketIssuePage: React.FunctionComponent = () => {
                                         <Grid item>
                                             <Grid item>
                                                 <Typography variant="h6">
-                                                    <strong>{l10n.t("Assignee")}</strong>
+                                                    <strong>{l10n.t('Assignee')}</strong>
                                                 </Typography>
                                             </Grid>
                                             <Grid item>
@@ -314,7 +314,7 @@ const BitbucketIssuePage: React.FunctionComponent = () => {
                                         <Grid item>
                                             <Grid item>
                                                 <Typography variant="h6">
-                                                    <strong>{l10n.t("Reporter")}</strong>
+                                                    <strong>{l10n.t('Reporter')}</strong>
                                                 </Typography>
                                             </Grid>
                                             <Grid container spacing={1} direction="row" alignItems="center">
@@ -329,7 +329,7 @@ const BitbucketIssuePage: React.FunctionComponent = () => {
                                         <Grid item>
                                             <Grid item>
                                                 <Typography variant="h6">
-                                                    <strong>{l10n.t("Created")}</strong>
+                                                    <strong>{l10n.t('Created')}</strong>
                                                 </Typography>
                                             </Grid>
                                             <Grid item>

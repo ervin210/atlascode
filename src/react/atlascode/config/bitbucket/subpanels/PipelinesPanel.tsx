@@ -66,8 +66,10 @@ export const PipelinesPanel: React.FunctionComponent<PipelinesPanelProps> = memo
                     aria-controls={`${ConfigSection.Bitbucket}-${ConfigSubSection.Pipelines}-content`}
                     id={`${ConfigSection.Bitbucket}-${ConfigSubSection.Pipelines}-header`}
                 >
-                    <PanelTitle>{l10n.t("Bitbucket Pipelines Explorer")}</PanelTitle>
-                    <PanelSubtitle>{l10n.t("configure the Bitbucket pipelines explorer and notifications")}</PanelSubtitle>
+                    <PanelTitle>{l10n.t('Bitbucket Pipelines Explorer')}</PanelTitle>
+                    <PanelSubtitle>
+                        {l10n.t('configure the Bitbucket pipelines explorer and notifications')}
+                    </PanelSubtitle>
                 </ExpansionPanelSummary>
                 <ExpansionPanelDetails>
                     <PipelinesExplorer

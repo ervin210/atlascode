@@ -24,11 +24,11 @@ export const JQLListItem: React.FunctionComponent<JQLListItemProps> = memo(
     ({ id, name, enabled, monitor, filterId, toggleEnabled, toggleMonitor, handleEdit, handleDelete }) => {
         const enableTT = enabled ? `Disable ${name}` : `Enable ${name}`;
         const typeIcon = filterId ? (
-            <Tooltip title={l10n.t("Filter")}>
+            <Tooltip title={l10n.t('Filter')}>
                 <FilterListIcon fontSize="small" />
             </Tooltip>
         ) : (
-            <Tooltip title={l10n.t("JQL")}>
+            <Tooltip title={l10n.t('JQL')}>
                 <InputIcon fontSize="small" />
             </Tooltip>
         );
@@ -46,18 +46,18 @@ export const JQLListItem: React.FunctionComponent<JQLListItemProps> = memo(
                 <Grid item>
                     <ListItemSecondaryAction>
                         {!filterId && (
-                            <Tooltip title={l10n.t("Edit {0}", name)}>
+                            <Tooltip title={l10n.t('Edit {0}', name)}>
                                 <IconButton id={id} edge="end" aria-label="edit" onClick={handleEdit}>
                                     <EditIcon fontSize="small" color="inherit" />
                                 </IconButton>
                             </Tooltip>
                         )}
-                        <Tooltip title={l10n.t("Delete {0}", name)}>
+                        <Tooltip title={l10n.t('Delete {0}', name)}>
                             <IconButton id={id} edge="end" aria-label="delete" onClick={handleDelete}>
                                 <DeleteIcon fontSize="small" color="inherit" />
                             </IconButton>
                         </Tooltip>
-                        <Tooltip title={l10n.t("Include in issue notifications")}>
+                        <Tooltip title={l10n.t('Include in issue notifications')}>
                             <Switch
                                 id={id}
                                 color="primary"

@@ -53,7 +53,7 @@ export const AltCloudAuthButton: React.FunctionComponent<AltCloudAuthButtonProps
     }, [controller, product]);
 
     return (
-        <Tooltip title={l10n.t("Opens a browser window to log in via OAuth")}>
+        <Tooltip title={l10n.t('Opens a browser window to log in via OAuth')}>
             <Button
                 id="onboarding-cloud-button"
                 variant="contained"

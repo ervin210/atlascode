@@ -56,12 +56,12 @@ export const TaskAdder: React.FunctionComponent<TaskAdderProps> = ({ addTask, ha
                                     onClick={handleSave}
                                     disabled={taskContent.trim() === '' || isLoading}
                                 >
-                                    {l10n.t("Save")}
+                                    {l10n.t('Save')}
                                 </Button>
                             </Grid>
                             <Grid item>
                                 <Button color={'primary'} onClick={handleCancelClicked} disabled={isLoading}>
-                                    {l10n.t("Cancel")}
+                                    {l10n.t('Cancel')}
                                 </Button>
                             </Grid>
                         </Grid>

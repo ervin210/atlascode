@@ -94,7 +94,9 @@ export class BitbucketCheckoutHelper implements CheckoutHelper {
                 let wsRepo = this.findRepoInCurrentWorkspace(refInfo.cloneUrl);
                 if (!wsRepo) {
                     this.showLoginMessage(
-                        l10n.t('Could not find repo in current workspace after attempting to clone. Are you authenticated with Bitbucket?'),
+                        l10n.t(
+                            'Could not find repo in current workspace after attempting to clone. Are you authenticated with Bitbucket?',
+                        ),
                     );
                     return;
                 }
@@ -137,7 +139,9 @@ export class BitbucketCheckoutHelper implements CheckoutHelper {
             });
         } catch {
             this.showLoginMessage(
-                l10n.t('Cannot open pull request. Authenticate with Bitbucket in the extension settings and try again.'),
+                l10n.t(
+                    'Cannot open pull request. Authenticate with Bitbucket in the extension settings and try again.',
+                ),
             );
         }
     }

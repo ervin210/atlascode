@@ -95,7 +95,11 @@ export class LegacyAtlascodeUriHandler implements Disposable, UriHandler {
                 const choice = l10n.t('Open auth settings');
                 window
                     .showInformationMessage(
-                        l10n.t("Cannot start work on {0} because site '{1}' is not authenticated. Please authenticate and try again.", issueKey, siteBaseURL),
+                        l10n.t(
+                            "Cannot start work on {0} because site '{1}' is not authenticated. Please authenticate and try again.",
+                            issueKey,
+                            siteBaseURL,
+                        ),
                         choice,
                     )
                     .then((userChoice) => {
@@ -144,7 +148,11 @@ export class LegacyAtlascodeUriHandler implements Disposable, UriHandler {
                 const choice = l10n.t('Open auth settings');
                 window
                     .showInformationMessage(
-                        l10n.t("Cannot open {0} because site '{1}' is not authenticated. Please authenticate and try again.", issueKey, siteBaseURL),
+                        l10n.t(
+                            "Cannot open {0} because site '{1}' is not authenticated. Please authenticate and try again.",
+                            issueKey,
+                            siteBaseURL,
+                        ),
                         choice,
                     )
                     .then((userChoice) => {

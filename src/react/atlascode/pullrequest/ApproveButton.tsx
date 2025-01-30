@@ -19,7 +19,7 @@ export const ApproveButton: React.FunctionComponent<ApproveButtonProps> = ({ hid
         <Box hidden={hidden}>
             <Button startIcon={<CheckCircleIcon />} color={'primary'} variant={'contained'} onClick={handleOnApprove}>
                 <Typography variant={'button'} noWrap>
-                    {status === 'APPROVED' ? l10n.t("Unapprove") : l10n.t("Approve")}
+                    {status === 'APPROVED' ? l10n.t('Unapprove') : l10n.t('Approve')}
                 </Typography>
             </Button>
         </Box>

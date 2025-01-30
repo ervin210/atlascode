@@ -42,7 +42,11 @@ export class BitbucketIssuesMonitor implements BitbucketActivityMonitor {
                     let issue: BitbucketIssue = notifiableRepos[0].issues[0];
                     vscode.window
                         .showInformationMessage(
-                            vscode.l10n.t('New Bitbucket issue "{0}" was created for repo "{1}"', issue.data.title, notifiableRepos[0].repo),
+                            vscode.l10n.t(
+                                'New Bitbucket issue "{0}" was created for repo "{1}"',
+                                issue.data.title,
+                                notifiableRepos[0].repo,
+                            ),
                             choice,
                         )
                         .then((usersChoice) => {
@@ -53,10 +57,11 @@ export class BitbucketIssuesMonitor implements BitbucketActivityMonitor {
                 } else if (notifiableRepos.length > 0) {
                     vscode.window
                         .showInformationMessage(
-                            vscode.l10n.t('New Bitbucket issues were created for the following repositories: {0}', notifiableRepos
-                                .map((nr) => nr.repo)
-                                .join(', ')),
-                                choice,
+                            vscode.l10n.t(
+                                'New Bitbucket issues were created for the following repositories: {0}',
+                                notifiableRepos.map((nr) => nr.repo).join(', '),
+                            ),
+                            choice,
                         )
                         .then((usersChoice) => {
                             if (usersChoice === choice) {

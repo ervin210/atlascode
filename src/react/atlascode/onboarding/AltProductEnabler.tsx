@@ -63,7 +63,7 @@ export const AltProductEnabler: React.FunctionComponent<AltProductEnablerProps> 
     }, [enabled, onToggle]);
 
     return (
-        <Tooltip title={enabled ? l10n.t("Disable {0} features", label) : l10n.t("Enable {0} features", label)}>
+        <Tooltip title={enabled ? l10n.t('Disable {0} features', label) : l10n.t('Enable {0} features', label)}>
             <ToggleButton className={classes.button} onClick={handleToggle} selected={enabled}>
                 <Grid container direction="column">
                     <Grid container direction="row" alignItems="center" justify="center" spacing={1}>

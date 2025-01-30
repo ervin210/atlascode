@@ -28,7 +28,7 @@ export const ContextMenus: React.FunctionComponent<ContextMenuProps> = memo(({ e
                     onChange={handleChange}
                 />
             }
-            label={l10n.t("Enable Bitbucket context menus in editor")}
+            label={l10n.t('Enable Bitbucket context menus in editor')}
             spacing={1}
             variant="body1"
         />

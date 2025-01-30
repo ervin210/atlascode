@@ -57,11 +57,13 @@ export const BranchWarning: React.FunctionComponent<BranchWarningProps> = (props
                                     <Grid item>
                                         <Typography>
                                             <Box fontWeight="fontWeightBold" component="span">
-                                                {l10n.t("There are uncommitted changes for this repo")}
+                                                {l10n.t('There are uncommitted changes for this repo')}
                                             </Box>
                                         </Typography>
                                         <Typography variant="subtitle2">
-                                            {l10n.t("Ensure the changes that need to be included are committed before creating the pull request.")}
+                                            {l10n.t(
+                                                'Ensure the changes that need to be included are committed before creating the pull request.',
+                                            )}
                                         </Typography>
                                     </Grid>
                                 </Grid>
@@ -80,11 +82,13 @@ export const BranchWarning: React.FunctionComponent<BranchWarningProps> = (props
                                     <Grid item>
                                         <Typography>
                                             <Box fontWeight="fontWeightBold" component="span">
-                                                {l10n.t("Upstream branch ({0}) not found", upstreamSourceBranchName)}
+                                                {l10n.t('Upstream branch ({0}) not found', upstreamSourceBranchName)}
                                             </Box>
                                         </Typography>
                                         <Typography variant="subtitle2">
-                                            {l10n.t("Ensure that the switch above is enabled to push the local changes to remote while creating the pull request.")}
+                                            {l10n.t(
+                                                'Ensure that the switch above is enabled to push the local changes to remote while creating the pull request.',
+                                            )}
                                         </Typography>
                                     </Grid>
                                 </Grid>
@@ -103,14 +107,20 @@ export const BranchWarning: React.FunctionComponent<BranchWarningProps> = (props
                                     <Grid item>
                                         <Typography>
                                             <Box fontWeight="fontWeightBold" component="span">
-                                                {l10n.t("Upstream branch not up to date")}
+                                                {l10n.t('Upstream branch not up to date')}
                                             </Box>
                                         </Typography>
                                         <Typography variant="subtitle2">
-                                            {l10n.t("Upstream branch ({0}) commit hash does not match with local branch ({1})", upstreamSourceBranchName, props.sourceBranch.name!)}
+                                            {l10n.t(
+                                                'Upstream branch ({0}) commit hash does not match with local branch ({1})',
+                                                upstreamSourceBranchName,
+                                                props.sourceBranch.name!,
+                                            )}
                                         </Typography>
                                         <Typography variant="subtitle2">
-                                            {l10n.t("Ensure that the switch above is enabled to push the local changes to remote while creating the pull request")}
+                                            {l10n.t(
+                                                'Ensure that the switch above is enabled to push the local changes to remote while creating the pull request',
+                                            )}
                                         </Typography>
                                     </Grid>
                                 </Grid>

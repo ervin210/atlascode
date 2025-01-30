@@ -53,7 +53,7 @@ export const CreateTriggerEditor: React.FunctionComponent<CreateTriggerEditorPro
             </Grid>
             <Grid item>
                 <Box marginTop={2}>
-                    <Typography variant="h4">{l10n.t("Comment Triggers")}</Typography>
+                    <Typography variant="h4">{l10n.t('Comment Triggers')}</Typography>
 
                     <Typography variant="caption">
                         {l10n.t("Strings (in comments) that will cause the 'Create Jira issue' code action to show")}
@@ -63,13 +63,13 @@ export const CreateTriggerEditor: React.FunctionComponent<CreateTriggerEditorPro
                         <InlineTextEditorList
                             options={triggers}
                             reverseButtons={true}
-                            addOptionButtonContent={l10n.t("Add Trigger")}
+                            addOptionButtonContent={l10n.t('Add Trigger')}
                             disabled={disabled}
-                            inputLabel={l10n.t("Trigger Text")}
+                            inputLabel={l10n.t('Trigger Text')}
                             onChange={handleOptionsChange}
                             emptyComponent={
                                 <Box width="100%">
-                                    <Typography align="center">{l10n.t("No triggers found.")}</Typography>
+                                    <Typography align="center">{l10n.t('No triggers found.')}</Typography>
                                 </Box>
                             }
                         />

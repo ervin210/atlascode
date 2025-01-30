@@ -66,7 +66,7 @@ export const JiraExplorer: React.FunctionComponent<JiraExplorerProps> = memo(
                 <Grid item>
                     <Grid container direction="row" spacing={1}>
                         <Grid item>
-                            <Tooltip title={l10n.t("Enable Jira Explorer")}>
+                            <Tooltip title={l10n.t('Enable Jira Explorer')}>
                                 <Switch
                                     size="small"
                                     color="primary"
@@ -77,7 +77,7 @@ export const JiraExplorer: React.FunctionComponent<JiraExplorerProps> = memo(
                             </Tooltip>
                         </Grid>
                         <Grid item>
-                            <Typography variant="body1">{l10n.t("Enable Jira Explorer")}</Typography>
+                            <Typography variant="body1">{l10n.t('Enable Jira Explorer')}</Typography>
                         </Grid>
                     </Grid>
                 </Grid>
@@ -85,7 +85,7 @@ export const JiraExplorer: React.FunctionComponent<JiraExplorerProps> = memo(
                 <Grid item>
                     <ToggleWithLabel
                         control={
-                            <Tooltip title={l10n.t("Enable issue grouping")}>
+                            <Tooltip title={l10n.t('Enable issue grouping')}>
                                 <Switch
                                     className={classes.indent}
                                     disabled={!enabled}
@@ -97,7 +97,7 @@ export const JiraExplorer: React.FunctionComponent<JiraExplorerProps> = memo(
                                 />
                             </Tooltip>
                         }
-                        label={l10n.t("Group issues by epic")}
+                        label={l10n.t('Group issues by epic')}
                         spacing={1}
                         variant="body1"
                     />
@@ -106,7 +106,7 @@ export const JiraExplorer: React.FunctionComponent<JiraExplorerProps> = memo(
                 <Grid item>
                     <ToggleWithLabel
                         control={
-                            <Tooltip title={l10n.t("Fetch all Results")}>
+                            <Tooltip title={l10n.t('Fetch all Results')}>
                                 <Switch
                                     className={classes.indent}
                                     disabled={!enabled}
@@ -118,7 +118,9 @@ export const JiraExplorer: React.FunctionComponent<JiraExplorerProps> = memo(
                                 />
                             </Tooltip>
                         }
-                        label={l10n.t("Fetch all JQL query results (default is 100, enabling this could cause performance issues)")}
+                        label={l10n.t(
+                            'Fetch all JQL query results (default is 100, enabling this could cause performance issues)',
+                        )}
                         spacing={1}
                         variant="body1"
                     />
@@ -127,7 +129,7 @@ export const JiraExplorer: React.FunctionComponent<JiraExplorerProps> = memo(
                 <Grid item>
                     <ToggleWithLabel
                         control={
-                            <Tooltip title={l10n.t("Enable Notifications")}>
+                            <Tooltip title={l10n.t('Enable Notifications')}>
                                 <Switch
                                     className={classes.indent}
                                     disabled={!enabled}
@@ -139,7 +141,7 @@ export const JiraExplorer: React.FunctionComponent<JiraExplorerProps> = memo(
                                 />
                             </Tooltip>
                         }
-                        label={l10n.t("Show notifications when new issues are created matching the JQLs/Filters below")}
+                        label={l10n.t('Show notifications when new issues are created matching the JQLs/Filters below')}
                         spacing={1}
                         variant="body1"
                     />
@@ -152,14 +154,16 @@ export const JiraExplorer: React.FunctionComponent<JiraExplorerProps> = memo(
                                 className={classes.indent}
                                 interval={refreshInterval}
                                 max={120}
-                                label={l10n.t("Refresh interval:")}
+                                label={l10n.t('Refresh interval:')}
                                 enabled={enabled}
                                 units="minutes"
                                 onChange={handleInterval}
                             />
                         </Grid>
                         <Grid item>
-                            <Typography variant="subtitle2">{l10n.t("(setting to 0 disables auto-refresh)")}</Typography>
+                            <Typography variant="subtitle2">
+                                {l10n.t('(setting to 0 disables auto-refresh)')}
+                            </Typography>
                         </Grid>
                     </Grid>
                 </Grid>
@@ -167,11 +171,11 @@ export const JiraExplorer: React.FunctionComponent<JiraExplorerProps> = memo(
                     <Box marginTop={2}>
                         <Typography component="div" variant="h4">
                             <Box display="inline" fontWeight="fontWeightBold">
-                                {l10n.t("Filters and Custom JQL")}
+                                {l10n.t('Filters and Custom JQL')}
                             </Box>
                             <Box display="inline" marginLeft={3}>
                                 <Link href="https://www.atlassian.com/blog/jira-software/jql-the-most-flexible-way-to-search-jira-14">
-                                    {l10n.t("What is JQL?")}
+                                    {l10n.t('What is JQL?')}
                                 </Link>
                             </Box>
                         </Typography>

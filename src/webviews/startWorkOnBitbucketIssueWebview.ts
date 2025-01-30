@@ -114,10 +114,11 @@ export class StartWorkOnBitbucketIssueWebview
                                 type: 'startWorkOnIssueResult',
                                 successMessage: `<ul><li>${vscode.l10n.t('Assigned the issue to you')}</li>${
                                     e.setupBitbucket
-                                        ? `<li>${vscode.l10n.t('Switched to {0} branch with upstream set to {1}',
-                                            `<code>${e.targetBranchName}</code>`,
-                                            `<code>${e.remoteName}/${e.targetBranchName}</code>`)
-                                        }</li>`
+                                        ? `<li>${vscode.l10n.t(
+                                              'Switched to {0} branch with upstream set to {1}',
+                                              `<code>${e.targetBranchName}</code>`,
+                                              `<code>${e.remoteName}/${e.targetBranchName}</code>`,
+                                          )}</li>`
                                         : ''
                                 }</ul>`,
                             });

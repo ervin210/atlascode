@@ -9,6 +9,7 @@ import { formatError } from '../../formatError';
 import { CommonActionMessageHandler } from '../common/commonActionMessageHandler';
 import { MessagePoster, WebviewController } from '../webviewController';
 import { WelcomeActionApi } from './welcomeActionApi';
+// eslint-disable-next-line no-restricted-imports
 import { l10n } from 'vscode';
 
 export class WelcomeWebviewController implements WebviewController<WelcomeInitMessage> {

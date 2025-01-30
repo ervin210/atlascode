@@ -10,7 +10,9 @@ export function showBitbucketDebugInfo() {
         const choice = vscode.l10n.t('Open settings');
         vscode.window
             .showInformationMessage(
-                vscode.l10n.t('Set ouput level setting (atlascode.outputLevel) to debug and run the command again to view the information'),
+                vscode.l10n.t(
+                    'Set ouput level setting (atlascode.outputLevel) to debug and run the command again to view the information',
+                ),
                 choice,
             )
             .then((userChoice) => {

@@ -37,7 +37,7 @@ export const JiraPanel: React.FunctionComponent<JiraPanelProps> = ({
     return (
         <>
             <Fade in={visible}>
-                <div hidden={!visible || config['jira.enabled']}>{l10n.t("Enable Jira features to see settings")}</div>
+                <div hidden={!visible || config['jira.enabled']}>{l10n.t('Enable Jira features to see settings')}</div>
             </Fade>
 
             <Fade in={visible}>

@@ -552,7 +552,7 @@ const PipelineSummaryPage: React.FunctionComponent = () => {
                                         ''
                                     ) : (
                                         <Button variant="contained" className={buttonClass} onClick={controller.rerun}>
-                                            {l10n.t("Rerun")}
+                                            {l10n.t('Rerun')}
                                         </Button>
                                     )}
                                     <RefreshButton loading={state.isRefreshing} onClick={controller.refresh} />

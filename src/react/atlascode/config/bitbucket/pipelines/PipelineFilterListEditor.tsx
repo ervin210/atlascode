@@ -32,13 +32,13 @@ export const PipelineFilterListEditor: React.FunctionComponent<PipelineFilterLis
             <InlineTextEditorList
                 options={filters}
                 reverseButtons={true}
-                addOptionButtonContent={l10n.t("Add Filter")}
+                addOptionButtonContent={l10n.t('Add Filter')}
                 disabled={!enabled}
-                inputLabel={l10n.t("Filter Text")}
+                inputLabel={l10n.t('Filter Text')}
                 onChange={handleOptionsChange}
                 emptyComponent={
                     <Box width="100%">
-                        <Typography align="center">{l10n.t("No filters found.")}</Typography>
+                        <Typography align="center">{l10n.t('No filters found.')}</Typography>
                     </Box>
                 }
             />

@@ -58,7 +58,7 @@ export const StatusBar: React.FunctionComponent<StatusBarProps> = ({
                             onChange={handleChange}
                         />
                     }
-                    label={l10n.t("Enable {0} Status Bar", productName)}
+                    label={l10n.t('Enable {0} Status Bar', productName)}
                     spacing={1}
                     variant="body1"
                 />
@@ -79,7 +79,7 @@ export const StatusBar: React.FunctionComponent<StatusBarProps> = ({
                         }
                         spacing={1}
                         variant="body1"
-                        label={l10n.t("Show product name")}
+                        label={l10n.t('Show product name')}
                     />
                 </Grid>
                 <Grid item>
@@ -115,7 +115,7 @@ export const StatusBar: React.FunctionComponent<StatusBarProps> = ({
                         }
                         spacing={1}
                         variant="body1"
-                        label={l10n.t("Show login button when not authenticated")}
+                        label={l10n.t('Show login button when not authenticated')}
                     />
                 </Grid>
             </Box>

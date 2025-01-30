@@ -43,8 +43,8 @@ export const BitbucketIssuesPanel: React.FunctionComponent<BitbucketIssuesPanelP
                     aria-controls={`${ConfigSection.Bitbucket}-${ConfigSubSection.Issues}-content`}
                     id={`${ConfigSection.Bitbucket}-${ConfigSubSection.Issues}-header`}
                 >
-                    <PanelTitle>{l10n.t("Bitbucket Issues Explorer")}</PanelTitle>
-                    <PanelSubtitle>{l10n.t("configure the Bitbucket issues explorer and notifications")}</PanelSubtitle>
+                    <PanelTitle>{l10n.t('Bitbucket Issues Explorer')}</PanelTitle>
+                    <PanelSubtitle>{l10n.t('configure the Bitbucket issues explorer and notifications')}</PanelSubtitle>
                 </ExpansionPanelSummary>
                 <ExpansionPanelDetails>
                     <BitbucketIssues

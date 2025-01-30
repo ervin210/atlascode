@@ -51,7 +51,7 @@ export const EditRenderedTextArea: React.FC<Props> = ({
                 />
                 <ButtonGroup>
                     <Button className="ac-button" onClick={handleSave} isDisabled={isSaving}>
-                        {l10n.t("Save")}
+                        {l10n.t('Save')}
                     </Button>
                     <Button
                         appearance="default"
@@ -60,7 +60,7 @@ export const EditRenderedTextArea: React.FC<Props> = ({
                             setCommentInputValue(text);
                         }}
                     >
-                        {l10n.t("Cancel")}
+                        {l10n.t('Cancel')}
                     </Button>
                 </ButtonGroup>
             </React.Fragment>

@@ -10,7 +10,7 @@ type CloudAuthButtonProps = {
 };
 
 export const CloudAuthButton: React.FunctionComponent<CloudAuthButtonProps> = ({ product }) => {
-    const loginText = l10n.t("Login to {0} Cloud", product.name);
+    const loginText = l10n.t('Login to {0} Cloud', product.name);
     const controller = useContext(ConfigControllerContext);
 
     const handleCloudProd = () => {

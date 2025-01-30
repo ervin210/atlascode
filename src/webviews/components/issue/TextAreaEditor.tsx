@@ -46,7 +46,7 @@ export const TextAreaEditor: React.FC<Props> = ({ value, disabled, placeholder, 
             <div className="ac-textarea-toolbar">
                 <PopoutMentionPicker
                     targetButtonContent="@"
-                    targetButtonTooltip={l10n.t("Mention {0}", "@")}
+                    targetButtonTooltip={l10n.t('Mention {0}', '@')}
                     loadUserOptions={fetchUsers}
                     onUserMentioned={handleCommentMention}
                 />

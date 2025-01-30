@@ -31,7 +31,7 @@ export const IssueHovers: React.FunctionComponent<IssueHoversProps> = memo(({ en
             control={
                 <Switch size="small" color="primary" id="jiraHoverEnabled" checked={enabled} onChange={handleChange} />
             }
-            label={l10n.t("Show details when hovering over issue keys in the editor")}
+            label={l10n.t('Show details when hovering over issue keys in the editor')}
             spacing={1}
             variant="body1"
         />

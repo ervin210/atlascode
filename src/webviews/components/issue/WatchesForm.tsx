@@ -62,7 +62,7 @@ export default class WatchesForm extends React.Component<MyProps, MyState> {
         return (
             <div>
                 <AvatarGroup appearance="stack" data={data} size="large" />
-                <span>{l10n.t("No watchers yet")}</span>
+                <span>{l10n.t('No watchers yet')}</span>
             </div>
         );
     };
@@ -76,7 +76,7 @@ export default class WatchesForm extends React.Component<MyProps, MyState> {
                     onClick={this.toggleWatching}
                 >
                     <WatchFilledIcon label="watchfilledicon" size="medium" />
-                    <span style={{ marginLeft: '8px' }}>{l10n.t("Stop watching")}</span>
+                    <span style={{ marginLeft: '8px' }}>{l10n.t('Stop watching')}</span>
                 </div>
             );
         }
@@ -88,7 +88,7 @@ export default class WatchesForm extends React.Component<MyProps, MyState> {
                 onClick={this.toggleWatching}
             >
                 <WatchIcon label="watchicon" size="medium" />
-                <span style={{ marginLeft: '8px' }}>{l10n.t("Start watching")}</span>
+                <span style={{ marginLeft: '8px' }}>{l10n.t('Start watching')}</span>
             </div>
         );
     };
@@ -111,7 +111,7 @@ export default class WatchesForm extends React.Component<MyProps, MyState> {
 
         return (
             <div>
-                <div className="ac-inline-watcher-list-heading">{l10n.t("watching this issue")}</div>
+                <div className="ac-inline-watcher-list-heading">{l10n.t('watching this issue')}</div>
                 {watcherList}
             </div>
         );
@@ -124,7 +124,7 @@ export default class WatchesForm extends React.Component<MyProps, MyState> {
             getOptionLabel: SelectFieldHelper.labelFuncForValueType(ValueType.User),
             getOptionValue: SelectFieldHelper.valueFuncForValueType(ValueType.User),
             components: SelectFieldHelper.getComponentsForValueType(ValueType.User),
-            placeholder: l10n.t("Add watchers"),
+            placeholder: l10n.t('Add watchers'),
         };
 
         return (

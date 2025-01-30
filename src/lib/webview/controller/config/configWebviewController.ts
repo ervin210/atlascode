@@ -13,7 +13,8 @@ import { Logger } from '../../../logger';
 import { WebViewID } from '../../../ipc/models/common';
 import { defaultActionGuard } from '@atlassianlabs/guipi-core-controller';
 import { formatError } from '../../formatError';
-import * as vscode from 'vscode';
+// eslint-disable-next-line no-restricted-imports
+import { l10n } from 'vscode';
 
 export const id: string = 'atlascodeSettingsV2';
 
@@ -46,7 +47,7 @@ export class ConfigWebviewController implements WebviewController<SectionChangeM
     }
 
     public title(): string {
-        return vscode.l10n.t('Atlassian Settings');
+        return l10n.t('Atlassian Settings');
     }
 
     public screenDetails() {

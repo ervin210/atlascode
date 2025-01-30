@@ -46,8 +46,8 @@ export const AuthPanel: React.FunctionComponent<AuthPanelProps> = memo(
                     aria-controls={`${section}-${ConfigSubSection.Auth}-content`}
                     id={`${section}-${ConfigSubSection.Auth}-header`}
                 >
-                    <PanelTitle>{l10n.t("Authentication")}</PanelTitle>
-                    <PanelSubtitle>{l10n.t("authenticate with {0} instances", product.name)}</PanelSubtitle>
+                    <PanelTitle>{l10n.t('Authentication')}</PanelTitle>
+                    <PanelSubtitle>{l10n.t('authenticate with {0} instances', product.name)}</PanelSubtitle>
                 </ExpansionPanelSummary>
                 <ExpansionPanelDetails>
                     <SiteAuthenticator product={product} isRemote={isRemote} sites={sites} />

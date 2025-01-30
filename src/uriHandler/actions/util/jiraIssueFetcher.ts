@@ -38,7 +38,11 @@ export class JiraIssueFetcher {
         const choice = vscode.l10n.t('Open auth settings');
         await window
             .showInformationMessage(
-                vscode.l10n.t("Cannot open {0} because site '{1}' is not authenticated. Please authenticate and try again.", issueKey, siteBaseURL),
+                vscode.l10n.t(
+                    "Cannot open {0} because site '{1}' is not authenticated. Please authenticate and try again.",
+                    issueKey,
+                    siteBaseURL,
+                ),
                 choice,
             )
             .then((userChoice) => {

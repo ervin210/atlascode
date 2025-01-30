@@ -118,7 +118,7 @@ export const ErrorDisplay: React.FunctionComponent<ErrorDisplayProps> = ({}) => 
                     }
                 >
                     <AlertTitle>{title}</AlertTitle>
-                    <p>{l10n.t("See details at the top of this page")}</p>
+                    <p>{l10n.t('See details at the top of this page')}</p>
                 </Alert>
             </Snackbar>
         </>

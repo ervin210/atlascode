@@ -222,7 +222,7 @@ const StartWorkPage: React.FunctionComponent = () => {
             const generatedBranchTitle = Mustache.render(state.customTemplate, view);
             setLocalBranch(generatedBranchTitle);
         } catch {
-            setLocalBranch(l10n.t("Invalid template: please follow the format described above"));
+            setLocalBranch(l10n.t('Invalid template: please follow the format described above'));
         }
     }, [state.issue.key, state.issue.summary, branchType.prefix, state.customTemplate]);
 
@@ -333,7 +333,7 @@ const StartWorkPage: React.FunctionComponent = () => {
                                     <PMFDisplay postMessageFunc={controller.postMessage} />
                                     <Collapse in={submitState === 'submit-success'}>
                                         <Alert variant="standard" severity="success">
-                                            <AlertTitle>{l10n.t("Success!")}</AlertTitle>
+                                            <AlertTitle>{l10n.t('Success!')}</AlertTitle>
                                             <List dense>
                                                 <ListItem disableGutters>
                                                     <Typography>- Assigned the issue to you</Typography>
@@ -401,7 +401,9 @@ const StartWorkPage: React.FunctionComponent = () => {
                                                 </Grid>
                                                 <Grid item>
                                                     <Typography variant="h4">
-                                                        <Box fontWeight="fontWeightBold">{l10n.t("Transition issue")}</Box>
+                                                        <Box fontWeight="fontWeightBold">
+                                                            {l10n.t('Transition issue')}
+                                                        </Box>
                                                     </Typography>
                                                 </Grid>
                                             </Grid>
@@ -413,7 +415,7 @@ const StartWorkPage: React.FunctionComponent = () => {
                                                         <TextField
                                                             select
                                                             size="small"
-                                                            label={l10n.t("Transition issue")}
+                                                            label={l10n.t('Transition issue')}
                                                             value={transition}
                                                             onChange={handleTransitionChange}
                                                         >
@@ -450,7 +452,9 @@ const StartWorkPage: React.FunctionComponent = () => {
                                                 </Grid>
                                                 <Grid item>
                                                     <Typography variant="h4">
-                                                        <Box fontWeight="fontWeightBold">{l10n.t("Set up git branch")}</Box>
+                                                        <Box fontWeight="fontWeightBold">
+                                                            {l10n.t('Set up git branch')}
+                                                        </Box>
                                                     </Typography>
                                                 </Grid>
                                             </Grid>
@@ -467,7 +471,7 @@ const StartWorkPage: React.FunctionComponent = () => {
                                                         <TextField
                                                             select
                                                             size="small"
-                                                            label={l10n.t("Repository")}
+                                                            label={l10n.t('Repository')}
                                                             fullWidth
                                                             value={repository}
                                                             onChange={handleRepositoryChange}
@@ -496,7 +500,10 @@ const StartWorkPage: React.FunctionComponent = () => {
                                                             disableClearable
                                                             openOnFocus
                                                             renderInput={(params) => (
-                                                                <TextField {...params} label={l10n.t("Source branch")} />
+                                                                <TextField
+                                                                    {...params}
+                                                                    label={l10n.t('Source branch')}
+                                                                />
                                                             )}
                                                         />
                                                     </Grid>
@@ -525,7 +532,7 @@ const StartWorkPage: React.FunctionComponent = () => {
                                                                     renderInput={(params) => (
                                                                         <TextField
                                                                             {...params}
-                                                                            label={l10n.t("Branch Prefix")}
+                                                                            label={l10n.t('Branch Prefix')}
                                                                             fullWidth
                                                                         />
                                                                     )}
@@ -535,7 +542,9 @@ const StartWorkPage: React.FunctionComponent = () => {
                                                                 />
                                                             </Grid>
                                                             <Grid item xs={2}>
-                                                                <Tooltip title={l10n.t("Change branch-naming configuration")}>
+                                                                <Tooltip
+                                                                    title={l10n.t('Change branch-naming configuration')}
+                                                                >
                                                                     <Button
                                                                         color="primary"
                                                                         onClick={handleOpenSettings}
@@ -549,7 +558,7 @@ const StartWorkPage: React.FunctionComponent = () => {
                                                     <Grid item xs={10} md={6} lg={4} xl={4}>
                                                         <TextField
                                                             size="small"
-                                                            label={l10n.t("Local branch")}
+                                                            label={l10n.t('Local branch')}
                                                             fullWidth
                                                             value={localBranch}
                                                             onChange={handleLocalBranchChange}
@@ -567,7 +576,7 @@ const StartWorkPage: React.FunctionComponent = () => {
                                                         <TextField
                                                             select
                                                             size="small"
-                                                            label={l10n.t("Set upstream to")}
+                                                            label={l10n.t('Set upstream to')}
                                                             fullWidth
                                                             value={upstream}
                                                             onChange={handleUpstreamChange}
@@ -716,8 +725,8 @@ const StartWorkPage: React.FunctionComponent = () => {
                                                         </IconButton>
                                                     }
                                                 >
-                                                    <AlertTitle>{l10n.t("Success!")}</AlertTitle>
-                                                    <p>{l10n.t("See details at the top of this page")}</p>
+                                                    <AlertTitle>{l10n.t('Success!')}</AlertTitle>
+                                                    <p>{l10n.t('See details at the top of this page')}</p>
                                                 </Alert>
                                             </Snackbar>
                                         </Grid>

@@ -61,7 +61,7 @@ function generateListItems(
         return [
             <ListItem key="empty">
                 <Box width="100%">
-                    <Typography align="center">{l10n.t("No sites found.")}</Typography>
+                    <Typography align="center">{l10n.t('No sites found.')}</Typography>
                 </Box>
             </ListItem>,
         ];
@@ -87,7 +87,7 @@ function generateListItems(
                     <ListItemText primary={swa.site.name} />
                     <ListItemSecondaryAction>
                         {swa.auth.state === AuthInfoState.Invalid && (
-                            <Tooltip title={l10n.t("Credential Error")}>
+                            <Tooltip title={l10n.t('Credential Error')}>
                                 <IconButton edge="end" aria-label="error" onClick={() => edit(swa)}>
                                     <ErrorIcon fontSize="small" color="inherit" />
                                 </IconButton>

@@ -25,15 +25,15 @@ export const MergeChecks: React.FC<MergeChecksProps> = ({ prData }) => {
         <Alert variant="standard" severity={allClear ? 'success' : 'warning'}>
             <Typography>
                 {approvalCount === 0
-                    ? l10n.t("Pull request has no approvals")
+                    ? l10n.t('Pull request has no approvals')
                     : approvalCount === 1
-                        ? l10n.t("Pull request has 1 approval")
-                        : l10n.t("Pull request has {0} approvals", approvalCount)}
+                      ? l10n.t('Pull request has 1 approval')
+                      : l10n.t('Pull request has {0} approvals', approvalCount)}
             </Typography>
 
-            {openTaskCount > 0 && <Typography>{l10n.t("Pull request has unresolved tasks")}</Typography>}
-            {needsWorkCount > 0 && <Typography>{l10n.t("Pull request has been marked as - Needs work")}</Typography>}
-            {unsuccessfulBuilds && <Typography>{l10n.t("Pull request has unsuccessful builds")}</Typography>}
+            {openTaskCount > 0 && <Typography>{l10n.t('Pull request has unresolved tasks')}</Typography>}
+            {needsWorkCount > 0 && <Typography>{l10n.t('Pull request has been marked as - Needs work')}</Typography>}
+            {unsuccessfulBuilds && <Typography>{l10n.t('Pull request has unsuccessful builds')}</Typography>}
         </Alert>
     );
 };

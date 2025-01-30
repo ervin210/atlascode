@@ -84,8 +84,8 @@ export const DemoDialog: React.FunctionComponent<DemoDialogProps> = ({
                 <Tooltip
                     title={
                         actionNotAvailable
-                            ? l10n.t("Not available for this action")
-                            : l10n.t("Click to perform this action automatically")
+                            ? l10n.t('Not available for this action')
+                            : l10n.t('Click to perform this action automatically')
                     }
                 >
                     <span>
@@ -95,12 +95,12 @@ export const DemoDialog: React.FunctionComponent<DemoDialogProps> = ({
                             variant="contained"
                             color="primary"
                         >
-                            {l10n.t("Try it!")}
+                            {l10n.t('Try it!')}
                         </Button>
                     </span>
                 </Tooltip>
                 <Button color="primary" onClick={handleModalClose}>
-                    {l10n.t("Close")}
+                    {l10n.t('Close')}
                 </Button>
             </DialogActions>
         </Dialog>

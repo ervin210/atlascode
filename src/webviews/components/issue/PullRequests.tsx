@@ -23,13 +23,13 @@ export default class PullRequests extends React.Component<
     private prState(pr: any): any {
         switch (pr.state) {
             case 'MERGED':
-                return <Lozenge appearance="success">{l10n.t("Merged")}</Lozenge>;
+                return <Lozenge appearance="success">{l10n.t('Merged')}</Lozenge>;
             case 'SUPERSEDED':
-                return <Lozenge appearance="moved">{l10n.t("Superseded")}</Lozenge>;
+                return <Lozenge appearance="moved">{l10n.t('Superseded')}</Lozenge>;
             case 'OPEN':
-                return <Lozenge appearance="inprogress">{l10n.t("Open")}</Lozenge>;
+                return <Lozenge appearance="inprogress">{l10n.t('Open')}</Lozenge>;
             case 'DECLINED':
-                return <Lozenge appearance="removed">{l10n.t("Declined")}</Lozenge>;
+                return <Lozenge appearance="removed">{l10n.t('Declined')}</Lozenge>;
             default:
                 return <div />;
         }

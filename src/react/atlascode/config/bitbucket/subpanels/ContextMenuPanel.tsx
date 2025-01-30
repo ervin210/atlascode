@@ -40,8 +40,8 @@ export const ContextMenuPanel: React.FunctionComponent<ContextMenuPanelProps> = 
                     aria-controls={`${ConfigSection.Bitbucket}-${ConfigSubSection.ContextMenus}-content`}
                     id={`${ConfigSection.Bitbucket}-${ConfigSubSection.ContextMenus}-header`}
                 >
-                    <PanelTitle>{l10n.t("Bitbucket Context Menus")}</PanelTitle>
-                    <PanelSubtitle>{l10n.t("configure the context menus in editor")}</PanelSubtitle>
+                    <PanelTitle>{l10n.t('Bitbucket Context Menus')}</PanelTitle>
+                    <PanelSubtitle>{l10n.t('configure the context menus in editor')}</PanelSubtitle>
                 </ExpansionPanelSummary>
                 <ExpansionPanelDetails>
                     <ContextMenus enabled={enabled} />

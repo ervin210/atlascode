@@ -134,7 +134,7 @@ export const OnboardingPage: React.FunctionComponent = () => {
                     />
                 );
             default:
-                return l10n.t("Unknown step");
+                return l10n.t('Unknown step');
         }
     };
 
@@ -165,7 +165,7 @@ export const OnboardingPage: React.FunctionComponent = () => {
                                             {l10n.t("All steps completed - you're finished")}
                                         </Typography>
                                         <Button onClick={handleReset} className={classes.button}>
-                                            {l10n.t("Reset")}
+                                            {l10n.t('Reset')}
                                         </Button>
                                     </div>
                                 ) : (
@@ -201,7 +201,7 @@ export const OnboardingPage: React.FunctionComponent = () => {
                                                         onClick={handleOpenSettings}
                                                         className={classes.button}
                                                     >
-                                                        {l10n.t("Open Extension Settings")}
+                                                        {l10n.t('Open Extension Settings')}
                                                     </Button>
                                                     <Button
                                                         variant="contained"
@@ -209,7 +209,7 @@ export const OnboardingPage: React.FunctionComponent = () => {
                                                         onClick={handleClosePage}
                                                         className={classes.button}
                                                     >
-                                                        {l10n.t("Finish")}
+                                                        {l10n.t('Finish')}
                                                     </Button>
                                                 </React.Fragment>
                                             )}

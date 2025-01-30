@@ -43,17 +43,17 @@ export const PMFDisplay: React.FunctionComponent<PMFDisplayProps> = ({ postMessa
                     <Grid spacing={3} container>
                         <Grid item>
                             <Button variant="contained" color="primary" size="small" onClick={handleOpenSurvey}>
-                                {l10n.t("Take Survey")}
+                                {l10n.t('Take Survey')}
                             </Button>
                         </Grid>
                         <Grid item>
                             <Button color="inherit" size="small" onClick={handleLater}>
-                                {l10n.t("Maybe Later")}
+                                {l10n.t('Maybe Later')}
                             </Button>
                         </Grid>
                         <Grid item>
                             <Button color="inherit" size="small" onClick={handleNever}>
-                                {l10n.t("No Thanks")}
+                                {l10n.t('No Thanks')}
                             </Button>
                         </Grid>
                     </Grid>

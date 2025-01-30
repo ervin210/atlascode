@@ -308,12 +308,12 @@ export const MarkdownEditor: React.FC<PropsType> = (props: PropsType) => {
                                 ) : null
                             }
                         >
-                            {l10n.t("Save")}
+                            {l10n.t('Save')}
                         </Button>
                     </Grid>
                     <Grid item>
                         <Button variant="contained" onClick={clearEditor}>
-                            {l10n.t("Cancel")}
+                            {l10n.t('Cancel')}
                         </Button>
                     </Grid>
                     <Grid item xs />

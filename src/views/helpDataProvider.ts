@@ -29,7 +29,8 @@ export class HelpDataProvider extends BaseTreeDataProvider {
                 l10n.t('What is JQL?'),
                 l10n.t('Learn about Jira Query Language'),
                 iconSet.JIRAICON,
-                KnownLinkID.WhatIsJQL),
+                KnownLinkID.WhatIsJQL,
+            ),
             new LinkNode(
                 l10n.t('Contribute'),
                 l10n.t('Create pull requests for this extension'),
@@ -40,7 +41,8 @@ export class HelpDataProvider extends BaseTreeDataProvider {
                 l10n.t('Report an Issue'),
                 l10n.t('Report and vote on issues'),
                 iconSet.ISSUES,
-                KnownLinkID.ReportAnIssue),
+                KnownLinkID.ReportAnIssue,
+            ),
             new LinkNode(
                 l10n.t('Tweet about us'),
                 l10n.t('Share your love for this extension'),

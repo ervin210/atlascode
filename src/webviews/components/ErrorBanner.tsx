@@ -68,7 +68,9 @@ export default class ErrorBanner extends React.Component<
             errorMarkup.push(<p className="force-wrap">{this.state.errorDetails}</p>);
         }
 
-        const title: string = this.state.errorDetails.title ? this.state.errorDetails.title : l10n.t("Something went wrong");
+        const title: string = this.state.errorDetails.title
+            ? this.state.errorDetails.title
+            : l10n.t('Something went wrong');
         return (
             <SectionMessage appearance="warning" title={title}>
                 <div>{errorMarkup}</div>
@@ -78,7 +80,7 @@ export default class ErrorBanner extends React.Component<
                         this.props.onDismissError();
                     }}
                 >
-                    {l10n.t("Dismiss")}
+                    {l10n.t('Dismiss')}
                 </button>
             </SectionMessage>
         );

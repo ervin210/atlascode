@@ -30,9 +30,9 @@ export const AddReviewers: React.FunctionComponent<AddReviewersProps> = ({ site,
 
     return (
         <React.Fragment>
-            <Tooltip title={l10n.t("Add Reviewers")}>
-                <Button color={'primary'} onClick={handleToggleOpen} value={l10n.t("Add Reviewers")}>
-                    <Typography variant="button">{l10n.t("Add Reviewers")}</Typography>
+            <Tooltip title={l10n.t('Add Reviewers')}>
+                <Button color={'primary'} onClick={handleToggleOpen} value={l10n.t('Add Reviewers')}>
+                    <Typography variant="button">{l10n.t('Add Reviewers')}</Typography>
                 </Button>
             </Tooltip>
             <DialogUserPicker

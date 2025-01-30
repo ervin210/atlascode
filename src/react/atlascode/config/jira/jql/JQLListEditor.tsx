@@ -203,7 +203,7 @@ export const JQLListEditor: React.FunctionComponent<JQLListEditorProps> = memo((
                                       })
                                     : [
                                           <Box width="100%">
-                                              <Typography align="center">{l10n.t("No entries found.")}</Typography>
+                                              <Typography align="center">{l10n.t('No entries found.')}</Typography>
                                           </Box>,
                                       ]
                             }

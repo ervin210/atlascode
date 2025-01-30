@@ -81,7 +81,7 @@ export default class WorklogForm extends React.Component<MyProps, MyState> {
                         return (
                             <form {...frmArgs.formProps}>
                                 <Field
-                                    label={l10n.t("Description")}
+                                    label={l10n.t('Description')}
                                     isRequired={false}
                                     id="comment"
                                     name="comment"
@@ -107,7 +107,7 @@ export default class WorklogForm extends React.Component<MyProps, MyState> {
                                     }}
                                 </Field>
                                 <Field
-                                    label={l10n.t("Date")}
+                                    label={l10n.t('Date')}
                                     id="started"
                                     name="started"
                                     isRequired={true}
@@ -117,7 +117,7 @@ export default class WorklogForm extends React.Component<MyProps, MyState> {
                                     {(fieldArgs: any) => {
                                         let errDiv = <span />;
                                         if (fieldArgs.error === 'EMPTY') {
-                                            errDiv = <ErrorMessage>{l10n.t("Date is required")}</ErrorMessage>;
+                                            errDiv = <ErrorMessage>{l10n.t('Date is required')}</ErrorMessage>;
                                         }
                                         return (
                                             <div>
@@ -151,7 +151,7 @@ export default class WorklogForm extends React.Component<MyProps, MyState> {
                                     }}
                                 </Field>
                                 <Field
-                                    label={l10n.t("Time spent")}
+                                    label={l10n.t('Time spent')}
                                     id="timeSpent"
                                     name="timeSpent"
                                     isRequired={true}
@@ -194,7 +194,7 @@ export default class WorklogForm extends React.Component<MyProps, MyState> {
                                         return (
                                             <Checkbox
                                                 {...fieldArgs.fieldProps}
-                                                label={l10n.t("Auto adjust remaining estimate")}
+                                                label={l10n.t('Auto adjust remaining estimate')}
                                                 onChange={FieldValidators.chain(
                                                     fieldArgs.fieldProps.onChange,
                                                     (item: any) => {
@@ -209,7 +209,7 @@ export default class WorklogForm extends React.Component<MyProps, MyState> {
                                 </CheckboxField>
                                 {!this.state.autoAdjust && (
                                     <Field
-                                        label={l10n.t("Remaining estimate")}
+                                        label={l10n.t('Remaining estimate')}
                                         id="newEstimate"
                                         name="newEstimate"
                                         isRequired={!this.state.autoAdjust}
@@ -260,12 +260,12 @@ export default class WorklogForm extends React.Component<MyProps, MyState> {
                                             className="ac-button"
                                             isDisabled={this.state.savingDisabled}
                                         >
-                                            {l10n.t("Submit")}
+                                            {l10n.t('Submit')}
                                         </Button>
                                     </div>
                                     <div style={{ display: 'inline-flex', marginRight: '4px', marginLeft: '4px;' }}>
                                         <Button className="ac-button" onClick={this.handleClose}>
-                                            {l10n.t("Cancel")}
+                                            {l10n.t('Cancel')}
                                         </Button>
                                     </div>
                                 </FormFooter>

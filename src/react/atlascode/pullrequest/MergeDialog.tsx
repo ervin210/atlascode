@@ -34,7 +34,7 @@ const useStyles = makeStyles((theme: Theme) => ({
 }));
 
 const emptyMergeStrategy: MergeStrategy = {
-    label: l10n.t("Default merge strategy"),
+    label: l10n.t('Default merge strategy'),
     value: '',
     isDefault: false,
 };
@@ -273,7 +273,7 @@ export const MergeDialog: React.FC<MergeDialogProps> = ({
                 aria-labelledby="merge-dialog-title"
             >
                 <DialogTitle>
-                    <Typography variant="h4">{l10n.t("Merge Pull Request")}</Typography>
+                    <Typography variant="h4">{l10n.t('Merge Pull Request')}</Typography>
                 </DialogTitle>
                 <DialogContent>
                     <MergeChecks prData={prData} />
@@ -287,7 +287,7 @@ export const MergeDialog: React.FC<MergeDialogProps> = ({
                                     onChange={handleMergeStrategyChange}
                                     fullWidth
                                     size="small"
-                                    label={l10n.t("Merge Strategy")}
+                                    label={l10n.t('Merge Strategy')}
                                 >
                                     <MenuItem
                                         key={emptyMergeStrategy.label}
@@ -295,7 +295,7 @@ export const MergeDialog: React.FC<MergeDialogProps> = ({
                                         value={emptyMergeStrategy}
                                         disabled
                                     >
-                                        {l10n.t("Select a merge strategy")}
+                                        {l10n.t('Select a merge strategy')}
                                     </MenuItem>
                                     {mergeStrategies.map((strategy) => (
                                         //@ts-ignore
@@ -337,7 +337,7 @@ export const MergeDialog: React.FC<MergeDialogProps> = ({
                                         !(transitionedJiraIssues.length > 0 || transitionedBitbucketIssues.length > 0)
                                     }
                                 >
-                                    <Typography variant="h5">{l10n.t("Transition issues")}</Typography>
+                                    <Typography variant="h5">{l10n.t('Transition issues')}</Typography>
                                 </Box>
                                 <TableContainer>
                                     <Table size="small" aria-label="issues to transition">
@@ -369,12 +369,12 @@ export const MergeDialog: React.FC<MergeDialogProps> = ({
                                     <Switch
                                         size="small"
                                         color="primary"
-                                        value={l10n.t("Close source branch")}
+                                        value={l10n.t('Close source branch')}
                                         checked={closeSourceBranch}
                                         onChange={handleCloseSourceBranchChange}
                                     />
                                 }
-                                label={l10n.t("Close source branch")}
+                                label={l10n.t('Close source branch')}
                                 spacing={1}
                                 variant="body1"
                             />
@@ -383,10 +383,10 @@ export const MergeDialog: React.FC<MergeDialogProps> = ({
                 </DialogContent>
                 <DialogActions>
                     <Button variant="contained" onClick={handleClose} color="primary">
-                        {l10n.t("Cancel")}
+                        {l10n.t('Cancel')}
                     </Button>
                     <Button variant="contained" onClick={handleMerge} color="primary">
-                        {l10n.t("Merge")}
+                        {l10n.t('Merge')}
                     </Button>
                 </DialogActions>
             </Dialog>

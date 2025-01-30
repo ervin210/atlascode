@@ -42,7 +42,7 @@ export const Connectivity: React.FunctionComponent<ConnectivityProps> = memo(
                                 onChange={handleCheckedChange}
                             />
                         }
-                        label={l10n.t("Enable https tunneling for proxies that only have an http endpoint")}
+                        label={l10n.t('Enable https tunneling for proxies that only have an http endpoint')}
                         spacing={1}
                         variant="body1"
                     />
@@ -59,7 +59,9 @@ export const Connectivity: React.FunctionComponent<ConnectivityProps> = memo(
                                 onChange={handleCheckedChange}
                             />
                         }
-                        label={l10n.t("Enable offline mode if you are without an internet connection to minimize errors")}
+                        label={l10n.t(
+                            'Enable offline mode if you are without an internet connection to minimize errors',
+                        )}
                         spacing={1}
                         variant="body1"
                     />

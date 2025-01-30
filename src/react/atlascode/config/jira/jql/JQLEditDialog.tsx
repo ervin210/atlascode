@@ -124,17 +124,17 @@ export const JQLEditDialog: React.FunctionComponent<JQLEditDialogProps> = ({
     return (
         <Dialog fullWidth maxWidth="md" open={open} onClose={onCancel}>
             <DialogTitle>
-                <Typography variant="h4">{l10n.t("JQL Editor")}</Typography>
+                <Typography variant="h4">{l10n.t('JQL Editor')}</Typography>
             </DialogTitle>
             <DialogContent>
-                <DialogContentText>{l10n.t("Configure JQL Entry")}</DialogContentText>
+                <DialogContentText>{l10n.t('Configure JQL Entry')}</DialogContentText>
                 <Grid container direction="column" spacing={2}>
                     <Grid item>
                         <TextField
                             required
                             id="name"
                             name="name"
-                            label={l10n.t("Name")}
+                            label={l10n.t('Name')}
                             defaultValue={jqlEntry ? jqlEntry.name : ''}
                             helperText={errors.name ? errors.name.message : undefined}
                             fullWidth
@@ -152,7 +152,7 @@ export const JQLEditDialog: React.FunctionComponent<JQLEditDialogProps> = ({
                             defaultValue={site.id}
                             as={
                                 <SiteSelector
-                                    label={l10n.t("Select a site")}
+                                    label={l10n.t('Select a site')}
                                     required
                                     error={!!errors.site}
                                     sites={sites}
@@ -176,7 +176,7 @@ export const JQLEditDialog: React.FunctionComponent<JQLEditDialogProps> = ({
                                         required
                                         id="jql"
                                         name="jql"
-                                        label={l10n.t("Enter JQL")}
+                                        label={l10n.t('Enter JQL')}
                                         fullWidth
                                         jqlAutocompleteRestData={
                                             jqlRestOptions.result ? jqlRestOptions.result : emptyJQLOptions

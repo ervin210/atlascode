@@ -42,7 +42,9 @@ export class PullRequestsExplorer extends BitbucketExplorer {
         picker.items = options;
         picker.title = l10n.t('Create pull request');
         picker.placeholder =
-            options.length > 0 ? l10n.t('Pick a repository') : l10n.t('No Bitbucket repositories found in this workspace');
+            options.length > 0
+                ? l10n.t('Pick a repository')
+                : l10n.t('No Bitbucket repositories found in this workspace');
 
         picker.onDidAccept(() => {
             if (picker.selectedItems.length > 0) {

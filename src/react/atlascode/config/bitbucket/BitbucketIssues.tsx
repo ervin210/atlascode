@@ -62,7 +62,7 @@ export const BitbucketIssues: React.FunctionComponent<BitbucketIssuesProps> = me
                                 onChange={handleChange}
                             />
                         }
-                        label={l10n.t("Enable Bitbucket issues explorer")}
+                        label={l10n.t('Enable Bitbucket issues explorer')}
                         spacing={1}
                         variant="body1"
                     />
@@ -81,7 +81,7 @@ export const BitbucketIssues: React.FunctionComponent<BitbucketIssuesProps> = me
                                 onChange={handleChange}
                             />
                         }
-                        label={l10n.t("Show notifications when new Bitbucket issues are created")}
+                        label={l10n.t('Show notifications when new Bitbucket issues are created')}
                         spacing={1}
                         variant="body1"
                     />
@@ -100,7 +100,7 @@ export const BitbucketIssues: React.FunctionComponent<BitbucketIssuesProps> = me
                                 onChange={handleChange}
                             />
                         }
-                        label={l10n.t("Show Create Jira Issue button on Bitbucket issue screens")}
+                        label={l10n.t('Show Create Jira Issue button on Bitbucket issue screens')}
                         spacing={1}
                         variant="body1"
                     />
@@ -119,7 +119,9 @@ export const BitbucketIssues: React.FunctionComponent<BitbucketIssuesProps> = me
                             />
                         </Grid>
                         <Grid item>
-                            <Typography variant="subtitle2">{l10n.t("(setting to 0 disables auto-refresh)")}</Typography>
+                            <Typography variant="subtitle2">
+                                {l10n.t('(setting to 0 disables auto-refresh)')}
+                            </Typography>
                         </Grid>
                     </Grid>
                 </Grid>

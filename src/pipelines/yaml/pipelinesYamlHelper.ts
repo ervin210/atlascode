@@ -56,7 +56,9 @@ export async function activateYamlExtension() {
 
     if (!yamlPlugin || !yamlPlugin.registerContributor) {
         window.showWarningMessage(
-            l10n.t("The installed Red Hat YAML extension doesn't support Intellisense. Please upgrade 'YAML Support by Red Hat' via the Extensions pane."),
+            l10n.t(
+                "The installed Red Hat YAML extension doesn't support Intellisense. Please upgrade 'YAML Support by Red Hat' via the Extensions pane.",
+            ),
         );
         return;
     }

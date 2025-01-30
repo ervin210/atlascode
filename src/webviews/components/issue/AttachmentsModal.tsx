@@ -26,14 +26,14 @@ export const AttachmentsModal: React.FunctionComponent<AttachmentsModalProps> = 
 
     return (
         <ModalTransition>
-            <Modal onClose={onCancel} heading={l10n.t("Add Attachment")} shouldCloseOnEscapePress={false}>
+            <Modal onClose={onCancel} heading={l10n.t('Add Attachment')} shouldCloseOnEscapePress={false}>
                 <AttachmentForm onFilesChanged={setFiles} />
                 <ButtonGroup>
                     <Button className="ac-button" onClick={doSave} isDisabled={files.length < 1}>
-                        {l10n.t("Save")}
+                        {l10n.t('Save')}
                     </Button>
                     <Button className="ac-button" onClick={onCancel}>
-                        {l10n.t("Cancel")}
+                        {l10n.t('Cancel')}
                     </Button>
                 </ButtonGroup>
             </Modal>

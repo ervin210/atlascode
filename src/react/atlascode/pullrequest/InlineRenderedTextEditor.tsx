@@ -81,7 +81,7 @@ const InlineRenderedTextEditor: React.FC<InlineTextEditorProps> = (props: Inline
                     onClick={enterEditMode}
                     visibility={showEditButton === true && props.onSave !== undefined ? 'visible' : 'hidden'}
                 >
-                    <Tooltip title={l10n.t("Click to edit")}>
+                    <Tooltip title={l10n.t('Click to edit')}>
                         <EditIcon />
                     </Tooltip>
                 </Box>

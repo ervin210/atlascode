@@ -38,7 +38,7 @@ export const RelatedJiraIssues: React.FunctionComponent<RelatedJiraIssuesProps> 
     const classes = useStyles();
     return (
         <TableContainer>
-            <Table size="small" aria-label={l10n.t("related jira issues")} className={classes.table}>
+            <Table size="small" aria-label={l10n.t('related jira issues')} className={classes.table}>
                 <TableBody>
                     {relatedIssues.map((issue) => (
                         <TableRow key={issue.id}>

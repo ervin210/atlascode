@@ -74,35 +74,27 @@ export class PullRequestNodeDataProvider extends BaseTreeDataProvider {
                 const choice3 = l10n.t('Show pull requests to be reviewed');
                 const choice4 = l10n.t('Show merged pull requests');
                 const choice5 = l10n.t('Show declined pull requests');
-                window
-                    .showQuickPick([
-                        choice1,
-                        choice2,
-                        choice3,
-                        choice4,
-                        choice5,
-                    ])
-                    .then((selected: string) => {
-                        switch (selected) {
-                            case choice1:
-                                commands.executeCommand(Commands.BitbucketShowOpenPullRequests);
-                                break;
-                            case choice2:
-                                commands.executeCommand(Commands.BitbucketShowPullRequestsCreatedByMe);
-                                break;
-                            case choice3:
-                                commands.executeCommand(Commands.BitbucketShowPullRequestsToReview);
-                                break;
-                            case choice4:
-                                commands.executeCommand(Commands.BitbucketShowMergedPullRequests);
-                                break;
-                            case choice5:
-                                commands.executeCommand(Commands.BitbucketShowDeclinedPullRequests);
-                                break;
-                            default:
-                                break;
-                        }
-                    });
+                window.showQuickPick([choice1, choice2, choice3, choice4, choice5]).then((selected: string) => {
+                    switch (selected) {
+                        case choice1:
+                            commands.executeCommand(Commands.BitbucketShowOpenPullRequests);
+                            break;
+                        case choice2:
+                            commands.executeCommand(Commands.BitbucketShowPullRequestsCreatedByMe);
+                            break;
+                        case choice3:
+                            commands.executeCommand(Commands.BitbucketShowPullRequestsToReview);
+                            break;
+                        case choice4:
+                            commands.executeCommand(Commands.BitbucketShowMergedPullRequests);
+                            break;
+                        case choice5:
+                            commands.executeCommand(Commands.BitbucketShowDeclinedPullRequests);
+                            break;
+                        default:
+                            break;
+                    }
+                });
             }),
             commands.registerCommand(Commands.RefreshPullRequestExplorerNode, (uri: Uri) => this.refreshResource(uri)),
             ctx.onDidChangeBitbucketContext(() => this.refresh()),

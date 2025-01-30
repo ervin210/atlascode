@@ -55,8 +55,8 @@ export const PRExplorerPanel: React.FunctionComponent<PRExplorerPanelProps> = me
                     aria-controls={`${ConfigSection.Bitbucket}-${ConfigSubSection.PR}-content`}
                     id={`${ConfigSection.Bitbucket}-${ConfigSubSection.PR}-header`}
                 >
-                    <PanelTitle>{l10n.t("Pull Requests Explorer")}</PanelTitle>
-                    <PanelSubtitle>{l10n.t("configure the pull requests explorer and notifications")}</PanelSubtitle>
+                    <PanelTitle>{l10n.t('Pull Requests Explorer')}</PanelTitle>
+                    <PanelSubtitle>{l10n.t('configure the pull requests explorer and notifications')}</PanelSubtitle>
                 </ExpansionPanelSummary>
                 <ExpansionPanelDetails>
                     <PRExplorer

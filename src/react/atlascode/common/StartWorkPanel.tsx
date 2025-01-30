@@ -41,8 +41,8 @@ export const StartWorkPanel: React.FunctionComponent<StartWorkPanelProps> = memo
                     aria-controls={`${ConfigSection.Jira}-${ConfigSubSection.StartWork}-content`}
                     id={`${ConfigSection.Jira}-${ConfigSubSection.StartWork}-header`}
                 >
-                    <PanelTitle>{l10n.t("Start Work")}</PanelTitle>
-                    <PanelSubtitle>{l10n.t("configure the start work screen")}</PanelSubtitle>
+                    <PanelTitle>{l10n.t('Start Work')}</PanelTitle>
+                    <PanelSubtitle>{l10n.t('configure the start work screen')}</PanelSubtitle>
                 </ExpansionPanelSummary>
                 <ExpansionPanelDetails>
                     <StartWorkSettings customPrefixes={customPrefixes} customTemplate={customTemplate} />

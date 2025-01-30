@@ -143,7 +143,7 @@ const CreateBitbucketIssuePage: React.FunctionComponent = () => {
                                 Create issue - {state.site.ownerSlug}/{state.site.repoSlug}
                             </Typography>
                             <Box className={classes.grow} />
-                            <Tooltip title={l10n.t("Create in browser...")}>
+                            <Tooltip title={l10n.t('Create in browser...')}>
                                 <IconButton
                                     href={`https://bitbucket.org/${state.site.ownerSlug}/${state.site.repoSlug}/issues/new`}
                                 >

@@ -75,11 +75,11 @@ export const JiraExplorerPanel: React.FunctionComponent<JiraExplorerPanelProps> 
         }, [expanded]);
 
         useEffect(() => {
-            const b64contents = document.getElementById("l10ndata")?.innerHTML;
+            const b64contents = document.getElementById('l10ndata')?.innerHTML;
             if (b64contents) {
                 l10n.config({ contents: atob(b64contents) });
             }
-            setIsReady(true);            
+            setIsReady(true);
         }, []);
 
         if (!ready) {
@@ -93,8 +93,10 @@ export const JiraExplorerPanel: React.FunctionComponent<JiraExplorerPanelProps> 
                     aria-controls={`${ConfigSection.Jira}-${ConfigSubSection.Issues}-content`}
                     id={`${ConfigSection.Jira}-${ConfigSubSection.Issues}-header`}
                 >
-                    <PanelTitle>{l10n.t("Jira Issues Explorer.")}</PanelTitle>
-                    <PanelSubtitle>{l10n.t("configure the Jira issue explorer, custom JQL and notifications")}</PanelSubtitle>
+                    <PanelTitle>{l10n.t('Jira Issues Explorer.')}</PanelTitle>
+                    <PanelSubtitle>
+                        {l10n.t('configure the Jira issue explorer, custom JQL and notifications')}
+                    </PanelSubtitle>
                 </ExpansionPanelSummary>
                 <ExpansionPanelDetails>
                     <JiraExplorer

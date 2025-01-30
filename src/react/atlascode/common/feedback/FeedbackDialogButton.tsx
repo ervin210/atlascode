@@ -56,12 +56,12 @@ export const FeedbackDialogButton: React.FunctionComponent<FeedbackDialogButtonP
     return (
         <>
             <Button variant="contained" color="primary" onClick={handleOpenDialog}>
-                {l10n.t("Send Feedback")}
+                {l10n.t('Send Feedback')}
             </Button>
 
             <Dialog fullWidth maxWidth="md" open={formOpen} onClose={handleDialogClose}>
                 <DialogContent>
-                    <DialogContentText>{l10n.t("Send Feedback")}</DialogContentText>
+                    <DialogContentText>{l10n.t('Send Feedback')}</DialogContentText>
                     <Grid container direction="column" spacing={2}>
                         <Grid item>
                             <TextField
@@ -73,23 +73,23 @@ export const FeedbackDialogButton: React.FunctionComponent<FeedbackDialogButtonP
                                 autoComplete="off"
                                 margin="dense"
                                 id="type"
-                                label={l10n.t("Type of Feedback")}
+                                label={l10n.t('Type of Feedback')}
                                 helperText={errors.type ? errors.type.message : undefined}
                                 fullWidth
                                 error={!!errors.type}
                                 inputRef={register}
                             >
                                 <MenuItem key={FeedbackType.Question} value={FeedbackType.Question}>
-                                    {l10n.t("Ask a question")}
+                                    {l10n.t('Ask a question')}
                                 </MenuItem>
                                 <MenuItem key={FeedbackType.Comment} value={FeedbackType.Comment}>
-                                    {l10n.t("Leave a comment")}
+                                    {l10n.t('Leave a comment')}
                                 </MenuItem>
                                 <MenuItem key={FeedbackType.Bug} value={FeedbackType.Bug}>
-                                    {l10n.t("Report a bug")}
+                                    {l10n.t('Report a bug')}
                                 </MenuItem>
                                 <MenuItem key={FeedbackType.Suggestion} value={FeedbackType.Suggestion}>
-                                    {l10n.t("Suggest an improvement")}
+                                    {l10n.t('Suggest an improvement')}
                                 </MenuItem>
                             </TextField>
                         </Grid>
@@ -100,7 +100,7 @@ export const FeedbackDialogButton: React.FunctionComponent<FeedbackDialogButtonP
                                 rows={3}
                                 id="description"
                                 name="description"
-                                label={l10n.t("Description")}
+                                label={l10n.t('Description')}
                                 helperText={errors.description ? errors.description.message : undefined}
                                 fullWidth
                                 error={!!errors.description}
@@ -117,7 +117,7 @@ export const FeedbackDialogButton: React.FunctionComponent<FeedbackDialogButtonP
                                 autoComplete="off"
                                 margin="dense"
                                 id="userName"
-                                label={l10n.t("Your name")}
+                                label={l10n.t('Your name')}
                                 helperText={errors.userName ? errors.userName.message : undefined}
                                 fullWidth
                                 error={!!errors.userName}
@@ -139,7 +139,7 @@ export const FeedbackDialogButton: React.FunctionComponent<FeedbackDialogButtonP
                                         inputRef={register}
                                     />
                                 }
-                                label={l10n.t("Atlassian can contact me about this feedback")}
+                                label={l10n.t('Atlassian can contact me about this feedback')}
                                 variant="body1"
                                 spacing={1}
                             />
@@ -153,7 +153,7 @@ export const FeedbackDialogButton: React.FunctionComponent<FeedbackDialogButtonP
                                     autoComplete="off"
                                     margin="dense"
                                     id="emailAddress"
-                                    label={l10n.t("Your contact email")}
+                                    label={l10n.t('Your contact email')}
                                     helperText={errors.emailAddress ? errors.emailAddress.message : undefined}
                                     fullWidth
                                     error={!!errors.emailAddress}

@@ -68,13 +68,19 @@ export const GeneralPanel: React.FunctionComponent<GeneralPanelProps> = ({
                             />
                             <Box marginTop={5}>
                                 <Typography variant="subtitle1" className={classes.root}>
-                                    {l10n.t("Note: This extension collects telemetry data, which is used to help understand how to improve the product.")}
+                                    {l10n.t(
+                                        'Note: This extension collects telemetry data, which is used to help understand how to improve the product.',
+                                    )}
                                 </Typography>
                                 <Typography variant="subtitle1" className={classes.root}>
-                                    {l10n.t("For example, this usage data helps to debug issues, such as slow start-up times, and to prioritize new features.")}
+                                    {l10n.t(
+                                        'For example, this usage data helps to debug issues, such as slow start-up times, and to prioritize new features.',
+                                    )}
                                 </Typography>
                                 <Typography variant="subtitle1" className={classes.root}>
-                                    {l10n.t("If you don't wish to send usage data to Atlassian, you can set the telemetry.enableTelemetry user setting to false, and restart VS Code.")}
+                                    {l10n.t(
+                                        "If you don't wish to send usage data to Atlassian, you can set the telemetry.enableTelemetry user setting to false, and restart VS Code.",
+                                    )}
                                 </Typography>
                             </Box>
                         </Grid>

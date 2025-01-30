@@ -51,7 +51,7 @@ export const PMFDialog: React.FunctionComponent<PMFDialogProps> = ({ open, onCan
     return (
         <Dialog fullWidth maxWidth="md" open={open} onClose={onCancel}>
             <DialogTitle>
-                <Typography variant="h4">{l10n.t("How Are We Doing?")}</Typography>
+                <Typography variant="h4">{l10n.t('How Are We Doing?')}</Typography>
             </DialogTitle>
             <DialogContent>
                 <Grid container direction="column" spacing={2}>
@@ -60,7 +60,7 @@ export const PMFDialog: React.FunctionComponent<PMFDialogProps> = ({ open, onCan
                             as={
                                 <FormControl component="fieldset" onBlur={handleLevelBlur}>
                                     <FormLabel component="legend" required error={errors.level !== undefined}>
-                                        {l10n.t("How would you feel if you could no longer use this extension?")}
+                                        {l10n.t('How would you feel if you could no longer use this extension?')}
                                     </FormLabel>
                                     <RadioGroup aria-label="level" name="level">
                                         <FormControlLabel
@@ -98,7 +98,7 @@ export const PMFDialog: React.FunctionComponent<PMFDialogProps> = ({ open, onCan
                             margin="dense"
                             id="improvements"
                             name="improvements"
-                            label={l10n.t("How can we improve this extension for you?")}
+                            label={l10n.t('How can we improve this extension for you?')}
                             fullWidth
                             inputRef={register}
                         />
@@ -112,7 +112,9 @@ export const PMFDialog: React.FunctionComponent<PMFDialogProps> = ({ open, onCan
                             margin="dense"
                             id="alternative"
                             name="alternative"
-                            label={l10n.t("What would you use as an alternative if this extension were no longer available?")}
+                            label={l10n.t(
+                                'What would you use as an alternative if this extension were no longer available?',
+                            )}
                             fullWidth
                             inputRef={register}
                         />
@@ -126,7 +128,7 @@ export const PMFDialog: React.FunctionComponent<PMFDialogProps> = ({ open, onCan
                             margin="dense"
                             id="benefits"
                             name="benefits"
-                            label={l10n.t("What are the main benefits you receive from this extension?")}
+                            label={l10n.t('What are the main benefits you receive from this extension?')}
                             fullWidth
                             inputRef={register}
                         />

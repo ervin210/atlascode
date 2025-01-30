@@ -98,7 +98,7 @@ export const Debug: React.FunctionComponent<DebugProps> = memo(
                 <div>
                     <input className={classes.hidden} id="cert-path-button" type="file" onChange={handleFileChange} />
                     <label htmlFor="cert-path-button">
-                        <Tooltip title={l10n.t("Choose Certificate File")}>
+                        <Tooltip title={l10n.t('Choose Certificate File')}>
                             <IconButton component="span">
                                 <InsertDriveFileIcon fontSize="small" color="inherit" />
                             </IconButton>
@@ -129,7 +129,7 @@ export const Debug: React.FunctionComponent<DebugProps> = memo(
                                 onChange={handleCheckedChange}
                             />
                         }
-                        label={l10n.t("Output curl commands for every API call")}
+                        label={l10n.t('Output curl commands for every API call')}
                         spacing={1}
                         variant="body1"
                     />
@@ -146,7 +146,7 @@ export const Debug: React.FunctionComponent<DebugProps> = memo(
                                 onChange={handleCheckedChange}
                             />
                         }
-                        label={l10n.t("Show a link to view non-renderable fields on Jira create issue page")}
+                        label={l10n.t('Show a link to view non-renderable fields on Jira create issue page')}
                         spacing={1}
                         variant="body1"
                     />
@@ -163,7 +163,7 @@ export const Debug: React.FunctionComponent<DebugProps> = memo(
                                 onChange={handleCheckedChange}
                             />
                         }
-                        label={l10n.t("Enable Charles Web Debug Proxy")}
+                        label={l10n.t('Enable Charles Web Debug Proxy')}
                         spacing={1}
                         variant="body1"
                     />
@@ -188,7 +188,7 @@ export const Debug: React.FunctionComponent<DebugProps> = memo(
                                 <Grid item>
                                     <InlineTextEditor
                                         fullWidth
-                                        label={l10n.t("Charles SSL Certificate Path")}
+                                        label={l10n.t('Charles SSL Certificate Path')}
                                         defaultValue={charlesCertPath}
                                         InputProps={{ endAdornment: fileAdorment }}
                                         onSave={handleInlineEdit}
@@ -237,7 +237,9 @@ export const Debug: React.FunctionComponent<DebugProps> = memo(
                                                 onChange={handleCheckedChange}
                                             />
                                         }
-                                        label={l10n.t("Only enable Charles when debugging this extension (internal use)")}
+                                        label={l10n.t(
+                                            'Only enable Charles when debugging this extension (internal use)',
+                                        )}
                                         spacing={1}
                                         variant="body1"
                                     />

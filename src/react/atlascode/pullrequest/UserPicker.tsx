@@ -64,7 +64,7 @@ const UserPicker: React.FC<UserPickerProps> = (props: UserPickerProps) => {
             onInputChange={handleInputChange}
             onChange={handleChange}
             loading={fetchUsers.loading}
-            renderInput={(params) => <TextField {...params} label={l10n.t("Reviewers")} />}
+            renderInput={(params) => <TextField {...params} label={l10n.t('Reviewers')} />}
             renderOption={(option) => (
                 <Grid container spacing={1} direction="row" alignItems="center">
                     <Grid item>

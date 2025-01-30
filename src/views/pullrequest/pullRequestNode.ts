@@ -107,7 +107,7 @@ export class PullRequestTitlesNode extends AbstractBaseNode {
             },
             (reason) => {
                 Logger.debug('error fetching pull request details', reason);
-                return [new SimpleNode(vscode.l10n.t('{0} Error: fetching pull request details failed', "⚠️"))];
+                return [new SimpleNode(vscode.l10n.t('{0} Error: fetching pull request details failed', '⚠️'))];
             },
         );
     }

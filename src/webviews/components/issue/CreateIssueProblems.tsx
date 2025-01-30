@@ -85,11 +85,11 @@ export default class CreateIssueProblems extends WebviewComponent<Action, Accept
                         <h4 style={{ marginTop: '3px', marginBottom: '5px;' }}>Non-renderable Fields:</h4>
                         <table className="field-problem-table">
                             <tr>
-                                <th>{l10n.t("Field Name")}</th>
-                                <th>{l10n.t("Key")}</th>
-                                <th>{l10n.t("Is Required")}</th>
-                                <th>{l10n.t("Schema")}</th>
-                                <th>{l10n.t("Message")}</th>
+                                <th>{l10n.t('Field Name')}</th>
+                                <th>{l10n.t('Key')}</th>
+                                <th>{l10n.t('Is Required')}</th>
+                                <th>{l10n.t('Schema')}</th>
+                                <th>{l10n.t('Message')}</th>
                             </tr>
                             {issueTypeFields}
                         </table>
@@ -110,13 +110,17 @@ export default class CreateIssueProblems extends WebviewComponent<Action, Accept
                                 />
                             )}
                             <h2>
-                                {l10n.t("Create Issue Problem Report: {0} ({1})", this.state.project.name, this.state.project.key)}
+                                {l10n.t(
+                                    'Create Issue Problem Report: {0} ({1})',
+                                    this.state.project.name,
+                                    this.state.project.key,
+                                )}
                             </h2>
                             <table className="problem-table">
                                 <tr>
-                                    <th>{l10n.t("Issue Type")}</th>
-                                    <th>{l10n.t("Is Renderable")}</th>
-                                    <th>{l10n.t("Message")}</th>
+                                    <th>{l10n.t('Issue Type')}</th>
+                                    <th>{l10n.t('Is Renderable')}</th>
+                                    <th>{l10n.t('Message')}</th>
                                 </tr>
                                 {issueTypeProblems}
                             </table>

@@ -12,7 +12,10 @@ export async function checkout(wsRepo: WorkspaceRepo, ref: string, forkCloneUrl:
 
 export async function checkoutPRBranch(pr: PullRequest, branch: string): Promise<boolean> {
     if (!pr.workspaceRepo) {
-        window.showInformationMessage(l10n.t('Error checking out the pull request branch: no workspace repo'), l10n.t('Dismiss'));
+        window.showInformationMessage(
+            l10n.t('Error checking out the pull request branch: no workspace repo'),
+            l10n.t('Dismiss'),
+        );
         Logger.error(new Error('error checking out the pull request branch: no workspace repo'));
         return false;
     }

@@ -51,7 +51,7 @@ export const AltServerAuthButton: React.FunctionComponent<AltServerAuthButtonPro
     }, [authDialogController, product]);
 
     return (
-        <Tooltip title={l10n.t("Opens a dialog window to log in with custom instance")}>
+        <Tooltip title={l10n.t('Opens a dialog window to log in with custom instance')}>
             <Button variant="contained" className={classes.button} onClick={openProductAuth}>
                 <Grid container direction="column">
                     <Grid container direction="row" alignItems="center" justify="center" spacing={3}>

@@ -30,8 +30,8 @@ export default class NavItem extends React.Component<
                     </Button>
                     {this.props.onCopy && (
                         <div className="jira-issue-copy-icon" onClick={this.props.onCopy}>
-                            <Tooltip content={l10n.t("Copy the web link to clipboard")}>
-                                <CopyIcon label={l10n.t("copy issue link")} size="small" />
+                            <Tooltip content={l10n.t('Copy the web link to clipboard')}>
+                                <CopyIcon label={l10n.t('copy issue link')} size="small" />
                             </Tooltip>
                         </div>
                     )}

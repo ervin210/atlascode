@@ -60,7 +60,7 @@ export const Misc: React.FunctionComponent<MiscProps> = memo(({ showWelcome, hel
                             onChange={handleWelcomeChange}
                         />
                     }
-                    label={l10n.t("Show welcome screen when extension is updated")}
+                    label={l10n.t('Show welcome screen when extension is updated')}
                     spacing={1}
                     variant="body1"
                 />
@@ -76,7 +76,7 @@ export const Misc: React.FunctionComponent<MiscProps> = memo(({ showWelcome, hel
                             onChange={handleHelpExplorerEnabledChange}
                         />
                     }
-                    label={l10n.t("Enable Help Explorer")}
+                    label={l10n.t('Enable Help Explorer')}
                     spacing={1}
                     variant="body1"
                 />
@@ -90,7 +90,7 @@ export const Misc: React.FunctionComponent<MiscProps> = memo(({ showWelcome, hel
                         name="outputLevel"
                         id="outputLevel"
                         onChange={handleOutputChange}
-                        label={l10n.t("Output Level")}
+                        label={l10n.t('Output Level')}
                     >
                         <MenuItem key={OutputLevelOption.SILENT} value={OutputLevelOption.SILENT}>
                             {OutputLevelOption.SILENT}

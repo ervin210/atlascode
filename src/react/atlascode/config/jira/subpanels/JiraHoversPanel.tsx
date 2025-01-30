@@ -40,8 +40,8 @@ export const JiraHoversPanel: React.FunctionComponent<JiraHoversPanelProps> = me
                     aria-controls={`${ConfigSection.Jira}-${ConfigSubSection.Hovers}-content`}
                     id={`${ConfigSection.Jira}-${ConfigSubSection.Hovers}-header`}
                 >
-                    <PanelTitle>{l10n.t("Jira Issue Hovers")}</PanelTitle>
-                    <PanelSubtitle>{l10n.t("configure hovering for Jira issue keys")}</PanelSubtitle>
+                    <PanelTitle>{l10n.t('Jira Issue Hovers')}</PanelTitle>
+                    <PanelSubtitle>{l10n.t('configure hovering for Jira issue keys')}</PanelSubtitle>
                 </ExpansionPanelSummary>
                 <ExpansionPanelDetails>
                     <IssueHovers enabled={enabled} />

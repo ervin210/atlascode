@@ -58,7 +58,7 @@ export default class VotesForm extends React.Component<MyProps, MyState> {
         return (
             <div>
                 <AvatarGroup appearance="stack" data={data} size="large" />
-                <span>{l10n.t("No voters yet")}</span>
+                <span>{l10n.t('No voters yet')}</span>
             </div>
         );
     };
@@ -72,7 +72,7 @@ export default class VotesForm extends React.Component<MyProps, MyState> {
                     onClick={this.toggleVote}
                 >
                     <StarFilledIcon label="starfilledicon" size="medium" />
-                    <span style={{ marginLeft: '8px' }}>{l10n.t("Remove vote")}</span>
+                    <span style={{ marginLeft: '8px' }}>{l10n.t('Remove vote')}</span>
                 </div>
             );
         }
@@ -84,7 +84,7 @@ export default class VotesForm extends React.Component<MyProps, MyState> {
                 onClick={this.toggleVote}
             >
                 <StarIcon label="staricon" size="medium" />
-                <span style={{ marginLeft: '8px' }}>{l10n.t("Vote for this issue")}</span>
+                <span style={{ marginLeft: '8px' }}>{l10n.t('Vote for this issue')}</span>
             </div>
         );
     };
@@ -106,7 +106,7 @@ export default class VotesForm extends React.Component<MyProps, MyState> {
 
         return (
             <div>
-                <div className="ac-inline-watcher-list-heading">{l10n.t("voted for this issue")}</div>
+                <div className="ac-inline-watcher-list-heading">{l10n.t('voted for this issue')}</div>
                 {voterList}
             </div>
         );

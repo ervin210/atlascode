@@ -141,7 +141,7 @@ export default class InlineSubtaskEditor extends React.Component<Props, State> {
                         onSave={this.handleSave}
                         onCancel={this.handleCancelInlineEdit}
                         validation={FieldValidators.isValidString}
-                        validationMessage={l10n.t("sub-task summary is required")}
+                        validationMessage={l10n.t('sub-task summary is required')}
                         inputProps={{
                             className: 'ac-inputField',
                             placeholder: 'What needs to be done?',

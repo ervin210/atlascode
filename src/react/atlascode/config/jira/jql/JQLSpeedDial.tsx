@@ -33,7 +33,7 @@ export const JQLSpeedDial: React.FunctionComponent<JQLSpeedDialProps> = memo(({ 
 
     return (
         <SpeedDial
-            ariaLabel={l10n.t("Add issue list")}
+            ariaLabel={l10n.t('Add issue list')}
             icon={<SpeedDialIcon />}
             onClose={handleClose}
             onOpen={handleOpen}
@@ -43,13 +43,13 @@ export const JQLSpeedDial: React.FunctionComponent<JQLSpeedDialProps> = memo(({ 
             <SpeedDialAction
                 key="addJQL"
                 icon={<InputIcon fontSize="small" />}
-                tooltipTitle={l10n.t("Add JQL")}
+                tooltipTitle={l10n.t('Add JQL')}
                 onClick={handleAddJql}
             />
             <SpeedDialAction
                 key="addFilter"
                 icon={<FilterListIcon fontSize="small" />}
-                tooltipTitle={l10n.t("Import Filter")}
+                tooltipTitle={l10n.t('Import Filter')}
                 onClick={handleAddFilter}
             />
         </SpeedDial>

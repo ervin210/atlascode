@@ -87,7 +87,7 @@ const DialogUserPicker: React.FC<DialogUserPickerProps> = (props: DialogUserPick
             aria-labelledby="reviewers-dialog-title"
         >
             <DialogTitle>
-                <Typography variant="h4">{l10n.t("Select Reviewers")}</Typography>
+                <Typography variant="h4">{l10n.t('Select Reviewers')}</Typography>
             </DialogTitle>
             <DialogContent>
                 <Autocomplete
@@ -120,10 +120,10 @@ const DialogUserPicker: React.FC<DialogUserPickerProps> = (props: DialogUserPick
             </DialogContent>
             <DialogActions>
                 <Button onClick={handleClose} color="default" variant={'contained'}>
-                    {l10n.t("Cancel")}
+                    {l10n.t('Cancel')}
                 </Button>
                 <Button onClick={handleSubmitReviewers} color="primary" variant={'contained'}>
-                    {l10n.t("Ok")}
+                    {l10n.t('Ok')}
                 </Button>
             </DialogActions>
         </Dialog>

@@ -19,7 +19,7 @@ export const NeedsWorkButton: React.FunctionComponent<NeedsWorkButtonProps> = ({
         <Box hidden={hidden}>
             <Button startIcon={<BuildIcon />} color={'primary'} variant={'contained'} onClick={handleOnApprove}>
                 <Typography variant={'button'} noWrap>
-                    {status === 'NEEDS_WORK' ? l10n.t("Remove Needs work") : l10n.t("Mark as Needs work")}
+                    {status === 'NEEDS_WORK' ? l10n.t('Remove Needs work') : l10n.t('Mark as Needs work')}
                 </Typography>
             </Button>
         </Box>

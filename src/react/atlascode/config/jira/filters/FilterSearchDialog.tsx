@@ -67,16 +67,16 @@ export const FilterSearchDialog: React.FunctionComponent<FilterSearchDialogProps
     return (
         <Dialog fullWidth maxWidth="md" open={open} onClose={onCancel}>
             <DialogTitle>
-                <Typography variant="h4">{l10n.t("Filter Search")}</Typography>
+                <Typography variant="h4">{l10n.t('Filter Search')}</Typography>
             </DialogTitle>
             <DialogContent>
-                <DialogContentText>{l10n.t("Import Filters")}</DialogContentText>
+                <DialogContentText>{l10n.t('Import Filters')}</DialogContentText>
                 <Grid container direction="column" spacing={2}>
                     <Grid item>
                         <SiteSelector
                             name="site"
                             value={site.id}
-                            label={l10n.t("Select a site")}
+                            label={l10n.t('Select a site')}
                             required
                             sites={sites}
                             fullWidth

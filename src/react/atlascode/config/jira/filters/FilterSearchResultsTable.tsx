@@ -120,7 +120,7 @@ const FilterTableToolbar: React.FunctionComponent<FilterTableToolbarProps> = ({
             )}
 
             <TextField
-                label={l10n.t("Search for filters")}
+                label={l10n.t('Search for filters')}
                 value={inputText}
                 onChange={(e) => setInputText(e.target.value)}
                 fullWidth

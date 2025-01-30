@@ -69,12 +69,12 @@ export const CommentTask: React.FunctionComponent<CommentTaskProps> = ({ task, o
                                 <Grid container direction={'row'}>
                                     <Grid item hidden={!task.editable}>
                                         <Button color={'primary'} onClick={handleEditPressed} disabled={isLoading}>
-                                            {l10n.t("Edit")}
+                                            {l10n.t('Edit')}
                                         </Button>
                                     </Grid>
                                     <Grid item hidden={!task.deletable}>
                                         <Button color={'primary'} onClick={handleDelete} disabled={isLoading}>
-                                            {l10n.t("Delete")}
+                                            {l10n.t('Delete')}
                                         </Button>
                                     </Grid>
                                 </Grid>
@@ -106,12 +106,12 @@ export const CommentTask: React.FunctionComponent<CommentTaskProps> = ({ task, o
                                             onClick={handleSave}
                                             disabled={taskContent.trim() === '' || isLoading}
                                         >
-                                            {l10n.t("Save")}
+                                            {l10n.t('Save')}
                                         </Button>
                                     </Grid>
                                     <Grid item>
                                         <Button color={'primary'} onClick={handleCancel} disabled={isLoading}>
-                                            {l10n.t("Cancel")}
+                                            {l10n.t('Cancel')}
                                         </Button>
                                     </Grid>
                                 </Grid>

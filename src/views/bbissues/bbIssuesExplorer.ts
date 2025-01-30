@@ -46,7 +46,9 @@ export class BitbucketIssuesExplorer extends BitbucketExplorer {
         picker.title = l10n.t('Create Bitbucket Issue');
 
         picker.placeholder =
-            options.length > 0 ? l10n.t('Pick a repository') : l10n.t('No Bitbucket repositories found in this workspace');
+            options.length > 0
+                ? l10n.t('Pick a repository')
+                : l10n.t('No Bitbucket repositories found in this workspace');
 
         picker.onDidAccept(() => {
             if (picker.selectedItems.length > 0) {
