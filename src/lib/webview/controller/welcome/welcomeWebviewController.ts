@@ -9,6 +9,7 @@ import { formatError } from '../../formatError';
 import { CommonActionMessageHandler } from '../common/commonActionMessageHandler';
 import { MessagePoster, WebviewController } from '../webviewController';
 import { WelcomeActionApi } from './welcomeActionApi';
+import { l10n } from 'vscode';
 
 export class WelcomeWebviewController implements WebviewController<WelcomeInitMessage> {
     private _isRefreshing: boolean;
@@ -22,7 +23,7 @@ export class WelcomeWebviewController implements WebviewController<WelcomeInitMe
     ) {}
 
     public title(): string {
-        return 'Atlassian Welcome';
+        return l10n.t('Atlassian Welcome');
     }
 
     public screenDetails() {

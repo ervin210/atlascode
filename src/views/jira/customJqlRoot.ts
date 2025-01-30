@@ -1,5 +1,5 @@
 import { MinimalORIssueLink } from '@atlassianlabs/jira-pi-common-models';
-import { commands, ConfigurationChangeEvent, Disposable, Event, EventEmitter, QuickPickItem, window } from 'vscode';
+import { commands, ConfigurationChangeEvent, Disposable, Event, EventEmitter, QuickPickItem, window, l10n } from 'vscode';
 import { searchIssuesEvent } from '../../analytics';
 import { DetailedSiteInfo, ProductJira } from '../../atlclients/authInfo';
 import { Commands } from '../../commands';
@@ -68,7 +68,7 @@ export class CustomJQLRoot extends BaseTreeDataProvider {
         window
             .showQuickPick<QuickPickIssue>(quickPickIssues, {
                 matchOnDescription: true,
-                placeHolder: 'Search for issue key or summary',
+                placeHolder: l10n.t('Search for issue key or summary'),
             })
             .then((quickPickIssue: QuickPickIssue | undefined) => {
                 if (quickPickIssue) {
@@ -100,10 +100,10 @@ export class CustomJQLRoot extends BaseTreeDataProvider {
         if (!Container.siteManager.productHasAtLeastOneSite(ProductJira)) {
             return Promise.resolve([
                 new SimpleJiraIssueNode(
-                    'Please login to Jira',
+                    l10n.t('Please login to Jira'),
                     {
                         command: Commands.ShowConfigPage,
-                        title: 'Login to Jira',
+                        title: l10n.t('Login to Jira'),
                         arguments: [ProductJira],
                     },
                     undefined,
@@ -116,7 +116,7 @@ export class CustomJQLRoot extends BaseTreeDataProvider {
         }
 
         if (this._jqlList.length === 0) {
-            return [new ConfigureJQLNode('Configure JQL entries in settings to view Jira issues')];
+            return [new ConfigureJQLNode(l10n.t('Configure JQL entries in settings to view Jira issues'))];
         }
 
         if (this._children.length === 0) {
@@ -127,7 +127,7 @@ export class CustomJQLRoot extends BaseTreeDataProvider {
             createJiraIssueNode,
             searchJiraIssuesNode,
             ...this._children,
-            new ConfigureJQLNode('Configure filters...'),
+            new ConfigureJQLNode(l10n.t('Configure filters...')),
         ];
     }
 

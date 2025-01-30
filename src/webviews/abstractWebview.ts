@@ -282,7 +282,7 @@ export abstract class AbstractReactWebview implements ReactWebview {
                 scriptUri: `build/${mainScript}`,
                 baseUri: baseUri,
                 cspSource: cspSource,
-                l10ndata: btoa(l10ndata),
+                l10ndata: l10ndata ? btoa(l10ndata) : undefined,
             });
         } else {
             return Mustache.render(Resources.htmlNotFound, { resource: 'reactHtml' });

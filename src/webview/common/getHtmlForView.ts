@@ -18,7 +18,7 @@ export function getHtmlForView(extensionPath: string, baseUri: Uri, cspSource: s
             scriptUri: `build/${mainScript}`,
             baseUri: baseUri,
             cspSource: cspSource,
-            l10ndata: btoa(l10ndata),
+            l10ndata: l10ndata ? btoa(l10ndata) : undefined,
         });
     } else {
         return Mustache.render(Resources.htmlNotFound, { resource: 'reactWebviewHtml' });
